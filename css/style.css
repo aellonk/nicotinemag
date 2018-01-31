@@ -20,9 +20,12 @@ html, body {
   overflow-y: visible;
   font-size: 100%;
   margin: 0;
-      margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .container {
@@ -615,7 +618,7 @@ section#stockists {
 
 /* small browsers */
 @media only screen and (min-width: 568px) and (max-width: 653px) and (-webkit-min-device-pixel-ratio: 1) {
-  html, body {
+  body {
     width: 100%;
   }
 
@@ -665,7 +668,7 @@ section#stockists {
 
  /* ----------- smaller WIDTH browsers ----------- */
 @media only screen and (min-width: 320px) and (max-width: 568px)and (-webkit-min-device-pixel-ratio: 2) {
-    html, body {
+    body {
     width: 100%;
   }
 
@@ -841,7 +844,7 @@ div#navbar-ipad {
 
 
 @media only screen and (min-width: 569px) and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 1) {
-   html, body {
+   body {
     width: 100%;
   }
 
@@ -875,7 +878,7 @@ div#navbar-ipad {
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1150px)and (-webkit-min-device-pixel-ratio: 2) {
-  html, body {
+  body {
     width: 65%;
   }
 
