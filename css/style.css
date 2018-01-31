@@ -993,12 +993,13 @@ div#navbar-ipad {
 
   /* iphone Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px)and (-webkit-min-device-pixel-ratio: 2) {
-  .story {
-    top: 95%;
-  }
 
   #story_image_1 {
-    height: 28.4em;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100%;
+    display: block;
   }
 
   p.text {
@@ -1073,7 +1074,7 @@ div#navbar-ipad {
   }
 
    section#stockists {
-    margin-top: 8%;
+    margin-top: 15%;
     font-size: 57%;
   }
 
@@ -1175,16 +1176,17 @@ div#navbar-ipad {
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { 
 
   section#stockists {
-    margin-top: 8%;
+    margin-top: 15%;
     font-size: 66%;
   }
 
-  .story {
-    top: 95%;
-  }
 
   #story_image_1 {
-    height: 28.4em;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100%;
+    display: block;
   }
 
   p.text {
