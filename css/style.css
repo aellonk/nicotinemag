@@ -619,11 +619,11 @@ section#stockists {
 /* small browsers */
 @media only screen and (min-width: 568px) and (max-width: 653px) and (-webkit-min-device-pixel-ratio: 1) {
   body {
-    width: 100%;
+    width: 95%;
   }
 
    .story {
-    width: 100%;
+    width: 95%;
   }
 
   #homepage {
@@ -669,11 +669,11 @@ section#stockists {
  /* ----------- smaller WIDTH browsers ----------- */
 @media only screen and (min-width: 320px) and (max-width: 568px)and (-webkit-min-device-pixel-ratio: 2) {
     body {
-    width: 100%;
+    width: 95%;
   }
 
    .story {
-    width: 100%;
+    width: 95%;
   }
 
   #homepage {
@@ -845,12 +845,12 @@ div#navbar-ipad {
 
 @media only screen and (min-width: 569px) and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 1) {
    body {
-    width: 100%;
+    width: 95%;
   }
 
    .story {
     top: 120%;
-    width: 100%;
+    width: 95%;
   }
 
    section#stockists {
@@ -861,13 +861,13 @@ div#navbar-ipad {
   }
 
   @media only screen and (min-width: 801px) and (max-width: 899px) and (-webkit-min-device-pixel-ratio: 1) {
-   html, body {
-    width: 100%;
+   body {
+    width: 95%;
   }
 
    .story {
     top: 120%;
-    width: 100%;
+    width: 95%;
   }
 
   section#stockists {
@@ -993,6 +993,13 @@ div#navbar-ipad {
 
   /* iphone Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px)and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    width: 95%;
+  }
+
+   .story {
+    width: 95%;
+  }
 
   #story_image_1 {
     margin-left: auto;
@@ -1174,7 +1181,14 @@ div#navbar-ipad {
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { 
+   body {
+    width: 95%;
+  }
 
+   .story {
+    width: 95%;
+  }
+  
   section#stockists {
     margin-top: 30%;
     font-size: 66%;
