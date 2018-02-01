@@ -322,14 +322,6 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
   background-image: url("../images/digital/slices/digital04.jpg");
   }
 
-  .digital:hover {
-   background: black;
-  }
-
- .digital:active {
-    border: 2px solid blue;
- }
-
  .story {
     position: absolute;
     left: 50%;
@@ -445,6 +437,7 @@ section.story-menu {
 section#stockists {
   text-align: center;
   margin-top: 12%;
+  margin-bottom: 3%;
 }
 
 /*//////// SLIDER IMAGES /////////*/
@@ -1082,8 +1075,8 @@ div#navbar-ipad {
   }
 
    section#stockists {
-    margin-top: 30%;
-    font-size: 57%;
+    margin-top: 45%;
+    font-size: 60%;
   }
 
   #img0 {
@@ -1192,7 +1185,7 @@ div#navbar-ipad {
   }
   
   section#stockists {
-    margin-top: 30%;
+    margin-top: 35%;
     font-size: 66%;
   }
 
