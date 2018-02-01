@@ -999,6 +999,7 @@ div#navbar-ipad {
 
    .story {
     width: 95%;
+    top: 120%;
   }
 
   #story_image_1 {
@@ -1187,6 +1188,7 @@ div#navbar-ipad {
 
    .story {
     width: 95%;
+    top: 120%;
   }
   
   section#stockists {
@@ -1217,7 +1219,6 @@ div#navbar-ipad {
    }
     
   .story {
-    top: 99%;
     width: 80%;
   }
 
