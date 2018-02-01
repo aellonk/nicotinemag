@@ -395,6 +395,10 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
      margin-bottom: 20%;
   }
 
+  .margin-bottom {
+    margin-bottom: 10%;
+  } 
+
   .group:after {
   content: "";
   display: table;
