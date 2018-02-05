@@ -379,8 +379,8 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
  div#info {
     margin: 0 auto;
     display: table; 
-    margin-bottom: 10%;
-    margin-top: 10%;
+    margin-bottom: 6em;
+    margin-top: 6em;
  }
 
  .underline {
@@ -440,8 +440,9 @@ section.story-menu {
 
 section#stockists {
   text-align: center;
-  margin-top: 12%;
+  margin-top: 3%;
   margin-bottom: 3%;
+  font-size: .8em;
 }
 
 /*//////// SLIDER IMAGES /////////*/
@@ -885,7 +886,7 @@ div#navbar-ipad {
   }
 
   div#info {
-    margin-top: 22%;
+    margin-top: 10em;
   }
 
  /* p.text {
