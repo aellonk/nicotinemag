@@ -1062,6 +1062,9 @@ div#navbar-ipad {
   display: none!important;
   -webkit-appearance: none;
   } 
+  video::-webkit-media-controls {
+    display:none !important;
+}
 
   _::-webkit-:host:not(:root:root), .cost { margin-top: -20px; }
 
@@ -1219,10 +1222,14 @@ div#navbar-ipad {
   p.text {
     clear: both;
   }
-    *::-webkit-media-controls-start-playback-button {
+
+  *::-webkit-media-controls-start-playback-button {
   display: none!important;
   -webkit-appearance: none;
-  } 
+}
+video::-webkit-media-controls {
+    display:none !important;
+}
 }
 
 /* ----------- iPhone X ----------- */
