@@ -440,9 +440,9 @@ section.story-menu {
 
 section#stockists {
   text-align: center;
-  margin-top: 3%;
-  margin-bottom: 3%;
-  font-size: .8em;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: .7em;
 }
 
 /*//////// SLIDER IMAGES /////////*/
@@ -1190,8 +1190,8 @@ div#navbar-ipad {
   }
   
   section#stockists {
-    margin-top: 35%;
-    font-size: 66%;
+    margin-top: 8%;
+    font-size: 64%;
   }
 
 
@@ -1206,6 +1206,15 @@ div#navbar-ipad {
   p.text {
     clear: both;
   }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) { 
+  section#stockists {
+    margin-top: 7%;
+    font-size: 69%;
 }
 
 
