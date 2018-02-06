@@ -991,8 +991,13 @@ div#navbar-ipad {
 
 }
 
+/* X-LARGE SCREENS*/
+@media screen and (min-device-width: 1550px) and (-webkit-min-device-pixel-ratio: 1) {
+  section#stockists {
+     padding-top: 0%;
+  }
 
-
+}
 
   /* iphone Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px)and (-webkit-min-device-pixel-ratio: 2) {
