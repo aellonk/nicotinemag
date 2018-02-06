@@ -716,6 +716,7 @@ div#navbar-ipad {
   *::-webkit-media-controls-start-playback-button {
   display: none!important;
   -webkit-appearance: none;
+  opacity: 0;
   } 
 
   _::-webkit-:host:not(:root:root), .cost { margin-top: -20px; }
@@ -1061,9 +1062,11 @@ div#navbar-ipad {
   *::-webkit-media-controls-start-playback-button {
   display: none!important;
   -webkit-appearance: none;
+  opacity: 0;
   } 
   video::-webkit-media-controls {
     display:none !important;
+    opacity: 0;
 }
 
   _::-webkit-:host:not(:root:root), .cost { margin-top: -20px; }
@@ -1226,9 +1229,14 @@ div#navbar-ipad {
   *::-webkit-media-controls-start-playback-button {
   display: none!important;
   -webkit-appearance: none;
+  opacity: 0;
 }
 video::-webkit-media-controls {
     display:none !important;
+    opacity: 0;
+}
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
 }
 }
 
@@ -1292,6 +1300,7 @@ video::-webkit-media-controls {
     *::-webkit-media-controls-start-playback-button {
   display: none!important;
   -webkit-appearance: none;
+  opacity: 0;
   } 
   
   section#stockists {
