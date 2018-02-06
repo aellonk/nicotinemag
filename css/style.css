@@ -1219,6 +1219,10 @@ div#navbar-ipad {
   p.text {
     clear: both;
   }
+    *::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+  } 
 }
 
 /* ----------- iPhone X ----------- */
