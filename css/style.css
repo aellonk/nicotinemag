@@ -22,7 +22,7 @@ html, body {
   margin: 0;
 }
 
-div#body {
+body {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
@@ -886,7 +886,7 @@ div#navbar-ipad {
   }
 
    .story {
-    top: 120%;
+    top: 105%;
     width: 65%;
   }
 
@@ -1308,7 +1308,7 @@ video::-webkit-media-controls-enclosure {
 
   .bottom-center {
     bottom: 40px;
-    }
+    }-
     
 
     *::-webkit-media-controls-start-playback-button {
