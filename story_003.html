@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108012904-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-108012904-1');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-108012904-1');
     </script>
     <!-- Facebook Pixel Code -->
     <script>
@@ -20,11 +22,11 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window,document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-     fbq('init', '813125702181721'); 
+    fbq('init', '813125702181721');
     fbq('track', 'PageView');
     </script>
     <noscript>
-     <img height="1" width="1" 
+    <img height="1" width="1"
     src="https://www.facebook.com/tr?id=813125702181721&ev=PageView
     &noscript=1"/>
     </noscript>
@@ -35,11 +37,10 @@
     <title>NicOtiNe</title>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
-   </head>
+  </head>
   <body>
-  <div id="body">
-   <div id="navbar-ipad">
+    <div id="body">
+    <div id="navbar-ipad">
       <ul>
         <a href="index.html"><li id="logo-ipad">NicOtiNe</li></a>
       </ul>
@@ -62,13 +63,45 @@
         <!-- 2nd digital story  -->
         <a href="story_002.html" class="slice" id="digital2"></a>
         <!-- 3rd digital story  -->
-        <a href="story_003.html" class="slice" id="digital3"></a>
+        <a href="story_003.html" class="slice selected" id="digital3"></a>
         <!-- 4th digital story  -->
         <a href="story_004.html" class="slice" id="digital4"></a>
       </div>
     </section>
-
-</div> <!-- end #menu -->
-
+    
+    <div class="story">
+      <div id="info">
+        <p class="italic underline profile">FASHION STORY</p>
+        <p class="profile">Taken Bodies, The Valium Series of Luca</p>
+        <p class="profile">Photography by</p>
+        <p class="profile">Felipe Huertas</p>
+      </div>
+      <div class="group margin">
+        <img class="full-width-story-image" src="images/digital/story03/bodies01.jpg"/>
+      </div>
+      <div class="margin">
+        <p class="underline text">From the photographer</p>
+        <p class="text">“Taken Bodies, The valium series of Luca” comes from Huerta’s personal project entitled “PUTAS ZORRAS.” “PUTAS ZORRAS” speaks to the controversial yet popular way in which women are pictured in the “macho” society of Latin America. Huerta subverts this notion by photographing male bodies with an untraditional gaze. </p>
+      </div>
+      <div class="margin">
+        <img class="full-width-story-image" src="images/digital/story03/bodies02.jpg"/>
+      </div>
+      <div class="margin">
+        <img class="full-width-story-image" src="images/digital/story03/bodies03.jpg"/>
+      </div>
+      <div class="margin-bottom">
+        <img id="story_image_1" src="images/digital/story03/bodies04.jpg"/>
+        <p class="padding text group">Photographed by Felipe Huertas
+        <br>Styled by: Paula Molina
+        <br>Hair and Makeup: Andrea Abimeri
+        <br>Model: Luca Ateca
+        <br>Art Direction: Luca Ateca and Felipe Huertas</p>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+    </div><!-- end #body -->
   </body>
 </html>

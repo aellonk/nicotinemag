@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108012904-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-108012904-1');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-108012904-1');
     </script>
     <!-- Facebook Pixel Code -->
     <script>
@@ -20,11 +22,11 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window,document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-     fbq('init', '813125702181721'); 
+    fbq('init', '813125702181721');
     fbq('track', 'PageView');
     </script>
     <noscript>
-     <img height="1" width="1" 
+    <img height="1" width="1"
     src="https://www.facebook.com/tr?id=813125702181721&ev=PageView
     &noscript=1"/>
     </noscript>
@@ -35,11 +37,11 @@
     <title>NicOtiNe</title>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
-   </head>
+    
+  </head>
   <body>
-  <div id="body">
-   <div id="navbar-ipad">
+    <div id="body">
+    <div id="navbar-ipad">
       <ul>
         <a href="index.html"><li id="logo-ipad">NicOtiNe</li></a>
       </ul>
@@ -60,15 +62,44 @@
         <!-- 1st digital story -->
         <a href="story_001.html" class="slice" id="digital1"></a>
         <!-- 2nd digital story  -->
-        <a href="story_002.html" class="slice" id="digital2"></a>
+        <a href="story_002.html" class="slice selected" id="digital2"></a>
         <!-- 3rd digital story  -->
         <a href="story_003.html" class="slice" id="digital3"></a>
         <!-- 4th digital story  -->
         <a href="story_004.html" class="slice" id="digital4"></a>
       </div>
     </section>
-
-</div> <!-- end #menu -->
-
-  </body>
+    
+    <div class="story">
+      <div id="info">
+        <p class="italic underline profile">PERSONAL WORK</p>
+        <p class="profile">Red</p>
+        <p class="profile">Photography by</p>
+        <p class="profile">Iakovos Kalaitzakis</p>
+      </div>
+      <div class="group margin">
+        <img class="full-width-story-image" src="images/digital/story02/red01.jpg"/>
+    </div>
+    <div class="margin">
+      <img class="full-width-story-image" src="images/digital/story02/red02.jpg"/>
+    </div>
+    <div class="margin">
+      <img class ="full-width-story-image" src="images/digital/story02/red03.jpg"/>
+    </div>
+    <div class="margin">
+      <img class ="full-width-story-image" src="images/digital/story02/red04.jpg"/>
+    </div>
+    <div class="margin">
+      <img class ="full-width-story-image" src="images/digital/story02/red05.jpg"/>
+    </div>
+    <div class="margin-bottom">
+      <img class="full-width-story-image" src="images/digital/story02/red06.jpg"/>
+      <br>
+      <br>
+      <br>
+    </div>
+  </div>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+  </div><!-- end #body -->
+</body>
 </html>
