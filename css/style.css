@@ -166,7 +166,7 @@ div.slick-slider {
   width: 943px;
   margin-top: 0em;
   margin-bottom: 1.5em;
-  border: 2px solid white;
+/*  border: 2px solid white;*/
   height: 80%;
 }
 
@@ -436,6 +436,31 @@ section.story-menu {
 .zoom:hover {
     transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
+
+
+#shop-left {
+  left: 25%;
+}
+
+div#shop-left .slide {
+  height: 25em;
+}
+
+#shop-right {
+  left: 75%;
+}
+
+.shop-right {
+  left: 75%;
+}
+
+.shop-left {
+  left: 25%;
+}
+div#shop-right .slide {
+  height: 25em;
+}
+
 /*////////////STOCKISTS///////////*/
 
 section#stockists {
