@@ -50,6 +50,7 @@ div#navbar-ipad {
 
 div#navbar {
   margin-top: 4%;
+  z-index: 10;
 }
 
 .nav {
@@ -468,6 +469,14 @@ section.story-menu {
   left: 31%;
 }
 
+.shop-image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 32em;
+  width: 25em;
+}
+
 /*////////////STOCKISTS///////////*/
 
 section#stockists {
@@ -480,346 +489,164 @@ section#stockists {
 
 /*//////// SLIDER IMAGES /////////*/
 
-#img0 {
-  background-image: url("../images/issue01/NICOTINECOVER.jpg");
+.slider-image {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   height: 32em;
-  width: 25em;
+  width: 58em;
+}
+
+#img0 {
+  background-image: url("../images/issue01/NICOTINECOVER.jpg");
 }
 
 #img1 {
   background-image: url("../images/issue01/NICOTINE01.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #img2 {
   background-image: url("../images/issue01/NICOTINE02.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #img3 {
   background-image: url("../images/issue01/NICOTINE03.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #img4 {
   background-image: url("../images/issue01/NICOTINE04.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #img5 {
   background-image: url("../images/issue01/NICOTINE05.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #img6 {
   background-image: url("../images/issue01/NICOTINE06.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #img7 {
   background-image: url("../images/issue01/NICOTINE07.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #img8 {
   background-image: url("../images/issue01/NICOTINE08.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #img9 {
   background-image: url("../images/issue01/NICOTINE09.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #img10 {
   background-image: url("../images/issue01/NICOTINE10.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #img11 {
   background-image: url("../images/issue01/NICOTINE11.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #img12 {
   background-image: url("../images/issue01/NICOTINE12.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #img13 {
   background-image: url("../images/issue01/NICOTINE13.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #img14 {
   background-image: url("../images/issue01/NICOTINE14.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #img15 {
   background-image: url("../images/issue01/NICOTINE15.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #img16 {
   background-image: url("../images/issue01/NICOTINE16.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #img17 {
   background-image: url("../images/issue01/NICOTINE17.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #issue02_img0 {
   background-image: url("../images/issue02/NICOTINE02COVER.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #issue02_img1 {
   background-image: url("../images/issue02/NICOTINE01.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #issue02_img2 {
   background-image: url("../images/issue02/NICOTINE02.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #issue02_img3 {
   background-image: url("../images/issue02/NICOTINE03.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #issue02_img4 {
   background-image: url("../images/issue02/NICOTINE04.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #issue02_img5 {
   background-image: url("../images/issue02/NICOTINE05.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #issue02_img6 {
   background-image: url("../images/issue02/NICOTINE06.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #issue02_img7 {
   background-image: url("../images/issue02/NICOTINE07.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #issue02_img8 {
   background-image: url("../images/issue02/NICOTINE08.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #issue02_img9 {
   background-image: url("../images/issue02/NICOTINE09.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #issue02_img10 {
   background-image: url("../images/issue02/NICOTINE10.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #issue02_img11 {
   background-image: url("../images/issue02/NICOTINE11.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #issue02_img12 {
   background-image: url("../images/issue02/NICOTINE12.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #issue02_img13 {
   background-image: url("../images/issue02/NICOTINE13.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #issue02_img14 {
   background-image: url("../images/issue02/NICOTINE14.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #issue02_img15 {
   background-image: url("../images/issue02/NICOTINE15.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #issue02_img16 {
   background-image: url("../images/issue02/NICOTINE16.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #issue02_img17 {
   background-image: url("../images/issue02/NICOTINE17.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #issue02_img18 {
   background-image: url("../images/issue02/NICOTINE18.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 #issue02_img19 {
   background-image: url("../images/issue02/NICOTINE02BACKCOVER.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
 }
 
 
@@ -965,93 +792,20 @@ div#navbar-ipad {
     
   }
 
+
+
+  .slider-image {
+  background-position: 50% 25%;
+  height: 20em;
+  }
+
   #img0 {
   background-position: center top;
   height: 20em;
   }
 
-  #img1 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img2 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img3 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img4 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img5 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img6 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img7 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img8 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img9 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img10 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img11 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img12 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img13 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img14 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img15 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img16 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img17 {
-  background-position: 50% 25%;
+  #issue02_img0 {
+  background-position: center top;
   height: 20em;
   }
 
@@ -1101,6 +855,9 @@ div#navbar-ipad {
   .shop-right {
       left: 0%; 
   }
+
+ 
+
 
 }
 
@@ -1163,6 +920,10 @@ div#navbar-ipad {
 
   .shop-right {
       left: 0%; 
+  }
+
+  .shop-image {
+    width: 58em;
   }
 
   }
@@ -1258,78 +1019,10 @@ div#navbar-ipad {
      padding-top: 0%;
   }
 
-#img0 {
-  height: 28em;
-
-}
-
-#img1 {
+.slider-image{
   height: 28em;
 }
 
-#img2 {
-  height: 28em;
-}
-
-#img3 {
-  height: 28em;
-}
-
-#img4 {
-  height: 28em;
-}
-
-#img5 {
-  height: 28em;
-}
-
-#img6 {
-  height: 28em;
-}
-
-#img7 {
-  height: 28em;
-}
-
-#img8 {
-  height: 28em;
-}
-
-#img9 {
-  height: 28em;
-}
-
-#img10 {
-  height: 28em;
-}
-
-#img11 {
-  height: 28em;
-}
-
-#img12 {
-  height: 28em;
-}
-
-#img13 {
-  height: 28em;
-}
-
-#img14 {
-  height: 28em;
-}
-
-#img15 {
-  height: 28em;
-}
-
-#img16 {
-  height: 28em;
-}
-
-#img17 {
-  height: 28em;
-}
 
 
 }
@@ -1447,95 +1140,23 @@ video::-webkit-media-controls-enclosure {
      padding-top: 0%;
   }
 
+
+  .slider-image {
+  background-position: 50% 25%;
+  height: 20em;
+  }
+
   #img0 {
   background-position: center top;
   height: 20em;
   }
 
-  #img1 {
-  background-position: 50% 25%;
+  #issue02_img0 {
+  background-position: center top;
   height: 20em;
   }
 
-  #img2 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
 
-  #img3 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img4 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img5 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img6 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img7 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img8 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img9 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img10 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img11 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img12 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img13 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img14 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img15 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img16 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img17 {
-  background-position: 50% 25%;
-  height: 20em;
-  }
 
 }
 
