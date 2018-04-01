@@ -439,28 +439,28 @@ section.story-menu {
 
 
 #shop-left {
-  left: 25%;
+  left: 31%;
 }
 
-div#shop-left .slide {
+/*div#shop-left .slide {
   height: 25em;
-}
+}*/
 
 #shop-right {
-  left: 75%;
+  left: 69%;
 }
 
 .shop-right {
-  left: 75%;
+  left: 69%;
 }
 
 .shop-left {
-  left: 25%;
+  left: 31%;
 }
-div#shop-right .slide {
+/*div#shop-right .slide {
   height: 25em;
 }
-
+*/
 /*////////////STOCKISTS///////////*/
 
 section#stockists {
