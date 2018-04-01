@@ -437,14 +437,24 @@ section.story-menu {
     transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
+.shop-vertical-center {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.shop-bottom-center {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 0;
+}
+
 
 #shop-left {
   left: 31%;
 }
-
-/*div#shop-left .slide {
-  height: 25em;
-}*/
 
 #shop-right {
   left: 69%;
@@ -457,10 +467,7 @@ section.story-menu {
 .shop-left {
   left: 31%;
 }
-/*div#shop-right .slide {
-  height: 25em;
-}
-*/
+
 /*////////////STOCKISTS///////////*/
 
 section#stockists {
@@ -866,6 +873,53 @@ div#navbar-ipad {
   height: 20em;
   }
 
+
+
+  .shop {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 3em;
+  }
+
+
+  #shop-left {
+      left: 0; 
+  }
+  .shop-vertical-center {
+      position: relative;
+      top: 50%;
+      left: 0; 
+      transform: translate(0%);
+  }
+  .margin-top {
+      margin-top: 3em;
+  }
+
+  .shop-left {
+      left: 0%; 
+  }
+  .shop-bottom-center {
+      position: relative;
+      left: 0; 
+      transform: translate(0%, 0%);
+      bottom: 0;
+  }
+
+  #shop-right {
+      left: 0%;
+  }
+
+  .shop-right {
+      left: 0%; 
+  }
+
 }
 
 
@@ -885,6 +939,51 @@ div#navbar-ipad {
      padding-top: 0%;
   }
 
+  .shop {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 3em;
+  }
+
+
+  #shop-left {
+      left: 0; 
+  }
+  .shop-vertical-center {
+      position: relative;
+      top: 50%;
+      left: 0; 
+      transform: translate(0%);
+  }
+  .margin-top {
+      margin-top: 3em;
+  }
+
+  .shop-left {
+      left: 0%; 
+  }
+  .shop-bottom-center {
+      position: relative;
+      left: 0; 
+      transform: translate(0%, 0%);
+      bottom: 0;
+  }
+
+  #shop-right {
+      left: 0%;
+  }
+
+  .shop-right {
+      left: 0%; 
+  }
+
   }
 
   @media only screen and (min-width: 801px) and (max-width: 899px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -901,6 +1000,22 @@ div#navbar-ipad {
     margin-top: 5%;
     font-size: 70%;
      padding-top: 0%;
+  }
+
+  #shop-left {
+  left: 25%;
+  }
+
+  #shop-right {
+  left: 75%;
+  }
+
+  .shop-right {
+  left: 75%;
+  }
+
+  .shop-left {
+  left: 25%;
   }
 
 }
@@ -925,6 +1040,24 @@ div#navbar-ipad {
   .bottom-align {
     left: 0;
   }
+
+
+  #shop-left {
+  left: 25%;
+  }
+
+  #shop-right {
+  left: 75%;
+  }
+
+  .shop-right {
+  left: 75%;
+  }
+
+  .shop-left {
+  left: 25%;
+  }
+
 }
 
 /* ----------smaller HEIGHT browsers -------- */
