@@ -481,9 +481,9 @@ section.story-menu {
 
 section#stockists {
  text-align: center;
-    margin-top: 3%;
+    margin-top: 10%;
     margin-bottom: 3%;
-    font-size: .8em;
+
 }
 
 /*//////// SLIDER IMAGES /////////*/
@@ -1280,7 +1280,7 @@ video::-webkit-media-controls-enclosure {
   } 
   
   section#stockists {
-    margin-top: 5%;
+    margin-top: 10%;
      padding-top: 0%;
   }
 
