@@ -218,7 +218,9 @@ section#buy a {
   margin-top: 1em;
 }
 
-
+#no-button {
+    cursor: inherit;
+}
 /*/////////// ABOUT /////////*/
 
 
