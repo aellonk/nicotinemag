@@ -482,6 +482,10 @@ section.story-menu {
   bottom: 0;
 }
 
+_:default:not(:root:root), .shop-bottom-center-archive { transform: translate(-50%, 1200%); }
+_:default:not(:root:root), .shop-archive-left { transform: translate(-50%, 75%); }
+_:default:not(:root:root), #no-button { background-color: white;}
+
 #shop-left {
   left: 31%;
 }
@@ -955,7 +959,7 @@ div#navbar-ipad {
   #shop-left {
       left: 0; 
   }
-  .shop-vertical-center {
+  .shop-vertical-center, .shop-archive-left {
       position: relative;
       top: 50%;
       left: 0; 
@@ -969,7 +973,7 @@ div#navbar-ipad {
   .shop-left {
       left: 0%; 
   }
-  .shop-bottom-center {
+  .shop-bottom-center, .shop-bottom-center-archive {
       position: relative;
       left: 0; 
       transform: translate(0%, 0%);
@@ -1022,12 +1026,13 @@ div#navbar-ipad {
   #shop-left {
       left: 0; 
   }
-  .shop-vertical-center {
+  .shop-vertical-center, .shop-archive-left {
       position: relative;
       top: 50%;
       left: 0; 
       transform: translate(0%);
   }
+
   .margin-top {
       margin-top: 3em;
   }
@@ -1035,7 +1040,7 @@ div#navbar-ipad {
   .shop-left {
       left: 0%; 
   }
-  .shop-bottom-center {
+  .shop-bottom-center, .shop-bottom-center-archive {
       position: relative;
       left: 0; 
       transform: translate(0%, 0%);
