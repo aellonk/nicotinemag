@@ -460,6 +460,14 @@ section.story-menu {
     transform: translate(-50%, -50%);
 }
 
+  .shop-archive-left {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 67%);
+  }
+
+
 .shop-bottom-center {
   position: absolute;
   left: 50%;
@@ -467,6 +475,12 @@ section.story-menu {
   bottom: 0;
 }
 
+.shop-bottom-center-archive {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 1230%);
+  bottom: 0;
+}
 
 #shop-left {
   left: 31%;
@@ -663,8 +677,13 @@ section#stockists {
   background-image: url("../images/issue02/NICOTINE02BACKCOVER.jpg");
 }
 
+#issue03_img0 {
+  background-image: url("../images/issue03/NICOTINE03COVER.jpg");
+}
 
-
+#issue03_img1 {
+  background-image: url("../images/issue03/NICOTINE01.jpg");
+}
 
 /*/////////////   MEDIA QUERIES  ////////////////*/
 
@@ -848,6 +867,7 @@ div#navbar-ipad {
       left: 0; 
       transform: translate(0%);
   }
+
   .margin-top {
       margin-top: 3em;
   }
