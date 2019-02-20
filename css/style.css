@@ -482,7 +482,7 @@ section.story-menu {
 }
 
 _:default:not(:root:root), .shop-bottom-center-archive { transform: translate(-50%, 1200%); }
-_:default:not(:root:root), .shop-archive-left { transform: translate(-50%, 75%); }
+_:default:not(:root:root), .shop-archive { transform: translate(-50%, 75%); }
 _:default:not(:root:root), #no-button { background-color: white;}
 
 #shop-left {
@@ -1058,6 +1058,11 @@ div#navbar-ipad {
   height: 20em;
   }
 
+  #issue04_img0 {
+  background-position: center top;
+  height: 20em;
+  }
+
 
 
   .shop {
@@ -1077,7 +1082,7 @@ div#navbar-ipad {
   #shop-left {
       left: 0; 
   }
-  .shop-vertical-center, .shop-archive-left {
+  .shop-vertical-center, .shop-archive {
       position: relative;
       top: 50%;
       left: 0; 
@@ -1144,7 +1149,7 @@ div#navbar-ipad {
   #shop-left {
       left: 0; 
   }
-  .shop-vertical-center, .shop-archive-left {
+  .shop-vertical-center, .shop-archive {
       position: relative;
       top: 50%;
       left: 0; 
