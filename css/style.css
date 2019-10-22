@@ -453,7 +453,32 @@ section.story-menu {
     transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-.shop-vertical-center {
+
+
+  .shop {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 3em;
+    position: absolute;
+    left: 0;
+    width: 98%;
+  }
+
+
+.shop-child {
+  flex-grow:0;
+  align-self: center;
+}
+
+
+/*.shop-vertical-center {
   position: absolute;
     top: 50%;
     left: 50%;
@@ -499,7 +524,7 @@ _:default:not(:root:root), #no-button { background-color: white;}
 
 .shop-left {
   left: 31%;
-}
+}*/
 
 .shop-image {
   background-size: contain;
@@ -1066,7 +1091,10 @@ section#stockists {
   background-image: url("../images/issue05/NICOTINE5PREVIEW38.jpg");
 }
 
-
+input[type="submit" i] {
+  background-color: white;
+  border-color: white;
+  }
 
 
 
@@ -1233,6 +1261,11 @@ div#navbar-ipad {
   }
 
   #issue04_img0 {
+  background-position: center top;
+  height: 20em;
+  }
+
+   #issue05_img0 {
   background-position: center top;
   height: 20em;
   }
@@ -1592,6 +1625,11 @@ video::-webkit-media-controls-enclosure {
   }
   
   #issue04_img0 {
+  background-position: center top;
+  height: 20em;
+  }
+
+   #issue05_img0 {
   background-position: center top;
   height: 20em;
   }
