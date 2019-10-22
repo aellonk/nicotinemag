@@ -466,9 +466,9 @@ section.story-menu {
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 3em;
+    width: 50%;
+    margin-top: 2em;
     position: absolute;
-    left: 0;
-    width: 98%;
   }
 
 
@@ -477,6 +477,9 @@ section.story-menu {
   align-self: center;
 }
 
+.shop-item-container {
+  margin: 1em;
+}
 
 /*.shop-vertical-center {
   position: absolute;
