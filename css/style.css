@@ -299,6 +299,12 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 
 
 /*//////////// DIGITAL /////////////*/
+.banner img.bannerad {
+  margin-top: 1em;
+}
+
+
+
 .container {
   padding: 0;
 }
@@ -314,6 +320,7 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 .slice {
   background-size: contain;
   background-repeat: no-repeat;
+  background-position-x: center;
   width: 25%;
   height: 55vh;
 }
@@ -341,7 +348,7 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
  .story {
     position: absolute;
     left: 50%;
-    top:115%;
+    top:125%;
     transform: translate(-50%, -50%);
     height: 100%
  }
@@ -1425,7 +1432,18 @@ div#navbar-ipad {
   .shop-left {
   left: 25%;
   }*/
+ div.banner img.bannerad {
+    margin-top: 4em;
+  }
 
+
+
+}
+
+@media only screen and (min-width: 568px) and (max-width: 801px) and (-webkit-min-device-pixel-ratio: 1) {
+div.banner img.bannerad {
+    margin-top: 3em;
+  }
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1150px)and (-webkit-min-device-pixel-ratio: 2) {
@@ -1439,6 +1457,15 @@ div#navbar-ipad {
   }
 
   div#info {
+    margin-top: 10em;
+  }
+
+  div#info.story2 {
+    margin-top: 4em;
+    margin-bottom: 4em;
+  }
+
+  div.banner img.bannerad {
     margin-top: 10em;
   }
 
@@ -1646,6 +1673,9 @@ video::-webkit-media-controls-enclosure {
     position: static;
   }
 
+  .banner img.bannerad{
+    margin-top: 0em;
+  }
 
   
 
