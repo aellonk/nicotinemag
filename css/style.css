@@ -461,14 +461,15 @@ section.story-menu {
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 3em;
-    width: 50%;
+    width: 100%;
     margin-top: 2em;
     position: absolute;
+    left: 0;
   }
 
 
@@ -478,7 +479,9 @@ section.story-menu {
 }
 
 .shop-item-container {
-  margin: 1em;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  margin: 0 auto;
 }
 
 /*.shop-vertical-center {
@@ -955,7 +958,7 @@ section#stockists {
 }
 
 #issue05_img6 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW05.jpg");
+  background-image: url("../images/issue05/NICOTINE5PREVIEW04.jpg");
 }
 
 #issue05_img7 {
@@ -1289,9 +1292,9 @@ div#navbar-ipad {
   }
 
 
-  #shop-left {
+ /* #shop-left {
       left: 0; 
-  }
+  }*/
   .shop-vertical-center, .shop-archive {
       position: relative;
       top: 50%;
@@ -1303,7 +1306,7 @@ div#navbar-ipad {
       margin-top: 3em;
   }
 
-  .shop-left {
+/*  .shop-left {
       left: 0%; 
   }
   .shop-bottom-center, .shop-bottom-center-archive {
@@ -1319,7 +1322,7 @@ div#navbar-ipad {
 
   .shop-right {
       left: 0%; 
-  }
+  }*/
 
  
 
@@ -1343,50 +1346,43 @@ div#navbar-ipad {
   }
 
   .shop {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-     display: flex;
+    width: 100%;
+    left: 0;
     flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 3em;
   }
 
-
+/*
   #shop-left {
       left: 0; 
-  }
+  }*/
   .shop-vertical-center, .shop-archive {
       position: relative;
       top: 50%;
       left: 0; 
       transform: translate(0%);
   }
-
+*/
   .margin-top {
       margin-top: 3em;
   }
 
-  .shop-left {
+/*  .shop-left {
       left: 0%; 
-  }
-  .shop-bottom-center, .shop-bottom-center-archive {
+  }*/
+  /*.shop-bottom-center, .shop-bottom-center-archive {
       position: relative;
       left: 0; 
       transform: translate(0%, 0%);
       bottom: 0;
   }
-
-  #shop-right {
+*/
+  /*#shop-right {
       left: 0%;
-  }
+  }*/
 
-  .shop-right {
+ /* .shop-right {
       left: 0%; 
-  }
+  }*/
 
   .shop-image {
     width: 58em;
@@ -1409,7 +1405,12 @@ div#navbar-ipad {
     font-size: 70%;
   }
 
-  #shop-left {
+    .shop {
+    width: 100%;
+    left: 0;
+  }
+
+ /* #shop-left {
   left: 25%;
   }
 
@@ -1423,7 +1424,7 @@ div#navbar-ipad {
 
   .shop-left {
   left: 25%;
-  }
+  }*/
 
 }
 
@@ -1452,8 +1453,11 @@ div#navbar-ipad {
     left: 0;
   }
 
-
-  #shop-left {
+  .shop {
+    width: 100%;
+    left: 0;
+  }
+/*  #shop-left {
   left: 25%;
   }
 
@@ -1467,7 +1471,7 @@ div#navbar-ipad {
 
   .shop-left {
   left: 25%;
-  }
+  }*/
 
 }
 
@@ -1636,6 +1640,13 @@ video::-webkit-media-controls-enclosure {
   background-position: center top;
   height: 20em;
   }
+
+  .shop {
+    width: 100%;
+    position: static;
+  }
+
+
   
 
 }
@@ -1658,6 +1669,11 @@ video::-webkit-media-controls-enclosure {
     font-size: 64%;
     margin-bottom: 10%;
      padding-top: 0%;
+  }
+
+    .shop {
+    width: 100%;
+    position: static;
   }
 
 
@@ -1716,6 +1732,12 @@ video::-webkit-media-controls-enclosure {
     
   .story {
     width: 80%;
+  }
+
+    .shop {
+    width: 100%;
+    flex-direction: row;
+    position: static;
   }
 
   #homepage {
