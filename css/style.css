@@ -299,7 +299,7 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 
 
 /*//////////// DIGITAL /////////////*/
-.banner img.bannerad {
+.banner img.celine {
   margin-top: 1em;
 }
 
@@ -348,10 +348,11 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
  .story {
     position: absolute;
     left: 50%;
-    top:125%;
+    top:123%;
     transform: translate(-50%, -50%);
-    height: 100%
+    height: 100%;
  }
+
 
  .story_image {
   background: url("../NICOTINE02.jpg");
@@ -418,6 +419,10 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
      margin-bottom: 20%;
   }
 
+   .banner .margin {
+     margin-bottom: 10%;
+     margin-top: 5%;
+  }
   .margin-bottom {
     margin-bottom: 10%;
   } 
@@ -1165,6 +1170,7 @@ input[type="submit" i] {
 
 
 
+
  /* ----------- smaller WIDTH browsers ----------- */
 @media only screen and (min-width: 320px) and (max-width: 568px)and (-webkit-min-device-pixel-ratio: 2) {
     body {
@@ -1173,6 +1179,7 @@ input[type="submit" i] {
 
    .story {
     width: 95%;
+    top: 110%;
   }
 
   #homepage {
@@ -1336,6 +1343,15 @@ div#navbar-ipad {
 
 }
 
+@media only screen and (min-width: 520px) and (max-width: 568px)and (-webkit-min-device-pixel-ratio: 2) {
+  .story {
+    top: 115%;
+  }
+}
+
+
+
+
 
 @media only screen and (min-width: 569px) and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 1) {
    body {
@@ -1343,7 +1359,7 @@ div#navbar-ipad {
   }
 
    .story {
-    top: 120%;
+    top: 118%;
     width: 95%;
   }
 
@@ -1432,7 +1448,7 @@ div#navbar-ipad {
   .shop-left {
   left: 25%;
   }*/
- div.banner img.bannerad {
+ div.banner img.celine {
     margin-top: 4em;
   }
 
@@ -1441,7 +1457,7 @@ div#navbar-ipad {
 }
 
 @media only screen and (min-width: 568px) and (max-width: 801px) and (-webkit-min-device-pixel-ratio: 1) {
-div.banner img.bannerad {
+div.banner img.celine {
     margin-top: 3em;
   }
 }
@@ -1452,7 +1468,7 @@ div.banner img.bannerad {
   }
 
    .story {
-    top: 105%;
+    top: 103%;
     width: 65%;
   }
 
@@ -1465,7 +1481,7 @@ div.banner img.bannerad {
     margin-bottom: 4em;
   }
 
-  div.banner img.bannerad {
+  div.banner img.celine {
     margin-top: 10em;
   }
 
@@ -1502,6 +1518,12 @@ div.banner img.bannerad {
 
 }
 
+@media only screen and (min-width: 1151px) and (max-width: 1250px)and (-webkit-min-device-pixel-ratio: 1) {
+  .story {
+    top: 117%;
+  }
+}
+
 /* ----------smaller HEIGHT browsers -------- */
 @media only screen and (min-height: 500px) and (max-height: 690px) and (-webkit-min-device-pixel-ratio: 1) {
 
@@ -1532,6 +1554,10 @@ div.banner img.bannerad {
 
 }
 
+
+
+
+
   /* iphone Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px)and (-webkit-min-device-pixel-ratio: 2) {
   body {
@@ -1540,7 +1566,7 @@ div.banner img.bannerad {
 
    .story {
     width: 95%;
-    top: 120%;
+    top: 110%;
   }
 
   #story_image_1 {
@@ -1673,7 +1699,7 @@ video::-webkit-media-controls-enclosure {
     position: static;
   }
 
-  .banner img.bannerad{
+  .banner img.celine{
     margin-top: 0em;
   }
 
@@ -1691,7 +1717,7 @@ video::-webkit-media-controls-enclosure {
 
    .story {
     width: 95%;
-    top: 120%;
+    top: 110%;
   }
   
   section#stockists {
@@ -1743,15 +1769,29 @@ video::-webkit-media-controls-enclosure {
 
 }
 
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) { 
+  .story {
+    top: 105%;
+  }
+}
+
 /* ----------- iPhone X ----------- */
 
 /* Portrait and Landscape */
-/*@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) { 
-  section#stockists {
-    margin-top: 7%;
-    font-size: 69%;
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) { 
+  .story {
+    top: 100%;
   }
-}*/
+}
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) { 
+    .story {
+    top: 100%;
+  }
+}
 
 /* ----------- iPad 1 and 2 ----------- */
 /* iPad 1 and 2 Portrait and Landscape */
@@ -1762,6 +1802,7 @@ video::-webkit-media-controls-enclosure {
     
   .story {
     width: 80%;
+    top: 110%;
   }
 
     .shop {
@@ -1822,4 +1863,33 @@ video::-webkit-media-controls-enclosure {
   } 
 
 }
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+   .story {
+    top: 105%;
+  }
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .story {
+    top: 105%;
+  }
+}
+
+/*safari hacks*/
+  
+@media \\0 screen and (min-width: 320px) and (max-width: 568px){
+  .story {
+    top:105%;
+    }
+  }
+
+
+
 
