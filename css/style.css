@@ -327,22 +327,22 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 
 
  #digital1 { 
-  background-image: url("../images/digital/slices/digital01.jpg");
+  background-image: url("../images/digital/slices/Slice_01.jpg");
   margin-right: 4%;
   }
 
   #digital2 { 
-  background-image: url("../images/digital/slices/digital02.jpg");
+  background-image: url("../images/digital/slices/Slice_02.jpg");
   margin-right: 4%;
   }
 
   #digital3 { 
-  background-image: url("../images/digital/slices/digital03.jpg");
+  background-image: url("../images/digital/slices/Slice_03.jpg");
   margin-right: 4%;
   }
 
   #digital4 { 
-  background-image: url("../images/digital/slices/digital04.jpg");
+  background-image: url("../images/digital/slices/Slice_04.jpg");
   }
 
  .story {
