@@ -1236,9 +1236,9 @@ input[type="submit" i] {
 }
 
 
-#issue6-cost {
+.issue-cost {
   padding: 2px 14px;
-    margin: 0;
+  margin: 0;
 }
 
 /*/////////////   MEDIA QUERIES  ////////////////*/
