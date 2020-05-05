@@ -1112,7 +1112,129 @@ section#stockists {
 input[type="submit" i] {
   background-color: white;
   border-color: white;
-  }
+}
+
+
+#issue06_img0 {
+  background-image: url("../images/issue06/frontcover01.jpg");
+}
+
+#issue06_img1 {
+  background-image: url("../images/issue06/frontcover02.jpg");
+}
+
+#issue06_img2 {
+  background-image: url("../images/issue06/frontcover03.jpg");
+}
+
+#issue06_img3 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW01.jpg");
+}
+
+#issue06_img4 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW02.jpg");
+}
+
+#issue06_img5 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW03.jpg");
+}
+
+#issue06_img6 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW04.jpg");
+}
+
+#issue06_img7 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW05.jpg");
+}
+
+#issue06_img8 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW06.jpg");
+}
+
+#issue06_img9 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW07.jpg");
+}
+
+#issue06_img10 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW08.jpg");
+}
+
+#issue06_img11 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW09.jpg");
+}
+
+#issue06_img12 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW10.jpg");
+}
+
+#issue06_img13 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW11.jpg");
+}
+
+#issue06_img14 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW12.jpg");
+}
+
+#issue06_img15 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW13.jpg");
+}
+
+#issue06_img16 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW14.jpg");
+}
+
+#issue06_img17 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW15.jpg");
+}
+
+#issue06_img18 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW16.jpg");
+}
+
+#issue06_img19 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW17.jpg");
+}
+
+#issue06_img20 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW18.jpg");
+}
+
+#issue06_img21 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW19.jpg");
+}
+
+#issue06_img22 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW20.jpg");
+}
+
+#issue06_img23 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW21.jpg");
+}
+
+#issue06_img24 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW22.jpg");
+}
+
+#issue06_img25 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW23.jpg");
+}
+
+#issue06_img26 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW24.jpg");
+}
+
+#issue06_img27 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW25.jpg");
+}
+
+#issue06_img28 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW26.jpg");
+}
+
+#issue06_img29 {
+  background-image: url("../images/issue06/NICOTINE06PREVIEW27.jpg");
+}
+
 
 
 
@@ -1289,6 +1411,11 @@ div#navbar-ipad {
   background-position: center top;
   height: 20em;
   }
+
+  #issue06_img0 {
+    background-position: center top;
+    height: 20em;
+    }
 
 
 
@@ -1680,18 +1807,23 @@ video::-webkit-media-controls-enclosure {
   }
 
   #issue03_img0 {
-  background-position: center top;
-  height: 20em;
+    background-position: center top;
+    height: 20em;
   }
   
   #issue04_img0 {
-  background-position: center top;
-  height: 20em;
+    background-position: center top;
+    height: 20em;
   }
 
-   #issue05_img0 {
-  background-position: center top;
-  height: 20em;
+  #issue05_img0 {
+    background-position: center top;
+    height: 20em;
+  }
+
+  #issue06_img0 {
+    background-position: center top;
+    height: 20em;
   }
 
   .shop {
