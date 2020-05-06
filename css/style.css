@@ -313,10 +313,6 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
   height: 100%;
 }
 
-/*.flex-center {
-    width: 50%;
-}*/
-
 .slice {
   background-size: contain;
   background-repeat: no-repeat;
@@ -380,18 +376,6 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
     display: block;
   }
 
-/* .thumbnails {
-    width: 100%;
-    text-align: center;
- }*/
-
- /*.center {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-*/
  p.italic {
   font-style: italic;
  }
@@ -495,54 +479,6 @@ section.story-menu {
   padding-bottom: 2em;
   margin: 0 auto;
 }
-
-/*.shop-vertical-center {
-  position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-  .shop-archive {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 67%);
-  }
-
-.shop-bottom-center {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  bottom: 0;
-}
-
-.shop-bottom-center-archive {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 1230%);
-  bottom: 0;
-}
-
-_:default:not(:root:root), .shop-bottom-center-archive { transform: translate(-50%, 1200%); }
-_:default:not(:root:root), .shop-archive { transform: translate(-50%, 75%); }
-_:default:not(:root:root), #no-button { background-color: white;}
-
-#shop-left {
-  left: 31%;
-}
-
-#shop-right {
-  left: 69%;
-}
-
-.shop-right {
-  left: 69%;
-}
-
-.shop-left {
-  left: 31%;
-}*/
 
 .shop-image {
   background-size: contain;
@@ -1449,28 +1385,6 @@ div#navbar-ipad {
   .margin-top {
       margin-top: 3em;
   }
-
-/*  .shop-left {
-      left: 0%; 
-  }
-  .shop-bottom-center, .shop-bottom-center-archive {
-      position: relative;
-      left: 0; 
-      transform: translate(0%, 0%);
-      bottom: 0;
-  }
-
-  #shop-right {
-      left: 0%;
-  }
-
-  .shop-right {
-      left: 0%; 
-  }*/
-
- 
-
-
 }
 
 @media only screen and (min-width: 520px) and (max-width: 568px)and (-webkit-min-device-pixel-ratio: 2) {
@@ -1504,38 +1418,16 @@ div#navbar-ipad {
     flex-direction: row;
   }
 
-/*
-  #shop-left {
-      left: 0; 
-  }*/
   .shop-vertical-center, .shop-archive {
       position: relative;
       top: 50%;
       left: 0; 
       transform: translate(0%);
   }
-*/
+
   .margin-top {
       margin-top: 3em;
   }
-
-/*  .shop-left {
-      left: 0%; 
-  }*/
-  /*.shop-bottom-center, .shop-bottom-center-archive {
-      position: relative;
-      left: 0; 
-      transform: translate(0%, 0%);
-      bottom: 0;
-  }
-*/
-  /*#shop-right {
-      left: 0%;
-  }*/
-
- /* .shop-right {
-      left: 0%; 
-  }*/
 
   .shop-image {
     width: 58em;
@@ -1563,21 +1455,6 @@ div#navbar-ipad {
     left: 0;
   }
 
- /* #shop-left {
-  left: 25%;
-  }
-
-  #shop-right {
-  left: 75%;
-  }
-
-  .shop-right {
-  left: 75%;
-  }
-
-  .shop-left {
-  left: 25%;
-  }*/
  div.banner img.celine {
     margin-top: 4em;
   }
@@ -1619,9 +1496,6 @@ div.banner img.celine {
     margin-top: 12%;
   }
 
- /* p.text {
-    clear: both;
-  }*/
   .bottom-align {
     left: 0;
   }
@@ -1630,21 +1504,6 @@ div.banner img.celine {
     width: 100%;
     left: 0;
   }
-/*  #shop-left {
-  left: 25%;
-  }
-
-  #shop-right {
-  left: 75%;
-  }
-
-  .shop-right {
-  left: 75%;
-  }
-
-  .shop-left {
-  left: 25%;
-  }*/
 
 }
 
@@ -1656,12 +1515,6 @@ div.banner img.celine {
 
 /* ----------smaller HEIGHT browsers -------- */
 @media only screen and (min-height: 500px) and (max-height: 690px) and (-webkit-min-device-pixel-ratio: 1) {
-
-
-/*  #homepage {
-    display: none;
-  }*/
-
   section#stockists {
     margin-top: 8%;
     font-size: 70%;
