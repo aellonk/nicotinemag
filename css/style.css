@@ -248,6 +248,10 @@ div#description {
   bottom: 0;
 }
 
+.story-link {
+  text-decoration: underline;
+}
+
 /* /////// CURRENT /////// */
 section#current {
   text-align: center;
