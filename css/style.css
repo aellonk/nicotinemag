@@ -1051,7 +1051,7 @@ section#stockists {
 
 input[type="submit" i] {
   background-color: white;
-  border-color: white;
+  border: none;
 }
 
 
@@ -1173,6 +1173,155 @@ input[type="submit" i] {
 
 #issue06_img29 {
   background-image: url("../images/issue06/NICOTINE06PREVIEW27.jpg");
+}
+
+
+#issue07_img0 {
+  background-image: url("../images/issue07/frontcover01.jpg");
+}
+
+#issue07_img1 {
+  background-image: url("../images/issue07/frontcover02.jpg");
+}
+
+#issue07_img2 {
+  background-image: url("../images/issue07/frontcover03.jpg");
+}
+
+#issue07_img3 {
+  background-image: url("../images/issue07/current01.jpg");
+}
+
+#issue07_img4 {
+  background-image: url("../images/issue07/current02.jpg");
+}
+
+#issue07_img5 {
+  background-image: url("../images/issue07/current03.jpg");
+}
+
+#issue07_img6 {
+  background-image: url("../images/issue07/current04.jpg");
+}
+
+#issue07_img7 {
+  background-image: url("../images/issue07/current05.jpg");
+}
+
+#issue07_img8 {
+  background-image: url("../images/issue07/current06.jpg");
+}
+
+#issue07_img9 {
+  background-image: url("../images/issue07/current07.jpg");
+}
+
+#issue07_img10 {
+  background-image: url("../images/issue07/current08.jpg");
+}
+
+#issue07_img11 {
+  background-image: url("../images/issue07/current09.jpg");
+}
+
+#issue07_img12 {
+  background-image: url("../images/issue07/current10.jpg");
+}
+
+#issue07_img13 {
+  background-image: url("../images/issue07/current11.jpg");
+}
+
+#issue07_img14 {
+  background-image: url("../images/issue07/current12.jpg");
+}
+
+#issue07_img15 {
+  background-image: url("../images/issue07/current13.jpg");
+}
+
+#issue07_img16 {
+  background-image: url("../images/issue07/current14.jpg");
+}
+
+#issue07_img17 {
+  background-image: url("../images/issue07/current15.jpg");
+}
+
+#issue07_img18 {
+  background-image: url("../images/issue07/current16.jpg");
+}
+
+#issue07_img19 {
+  background-image: url("../images/issue07/current17.jpg");
+}
+
+#issue07_img20 {
+  background-image: url("../images/issue07/current18.jpg");
+}
+
+#issue07_img21 {
+  background-image: url("../images/issue07/current19.jpg");
+}
+
+#issue07_img22 {
+  background-image: url("../images/issue07/current20.jpg");
+}
+
+#issue07_img23 {
+  background-image: url("../images/issue07/current21.jpg");
+}
+
+#issue07_img24 {
+  background-image: url("../images/issue07/current22.jpg");
+}
+
+#issue07_img25 {
+  background-image: url("../images/issue07/current23.jpg");
+}
+
+#issue07_img26 {
+  background-image: url("../images/issue07/current24.jpg");
+}
+
+#issue07_img27 {
+  background-image: url("../images/issue07/current25.jpg");
+}
+
+#issue07_img28 {
+  background-image: url("../images/issue07/current26.jpg");
+}
+
+#issue07_img29 {
+  background-image: url("../images/issue07/current27.jpg");
+}
+
+#issue07_img30 {
+  background-image: url("../images/issue07/current28.jpg");
+}
+
+#issue07_img31 {
+  background-image: url("../images/issue07/current29.jpg");
+}
+
+#issue07_img32 {
+  background-image: url("../images/issue07/current30.jpg");
+}
+
+#issue07_img33 {
+  background-image: url("../images/issue07/current31.jpg");
+}
+
+#issue07_img34 {
+  background-image: url("../images/issue07/current32.jpg");
+}
+
+#issue07_img35 {
+  background-image: url("../images/issue07/current33.jpg");
+}
+
+#issue07_img36 {
+  background-image: url("../images/issue07/backcover.jpg");
 }
 
 
@@ -1358,8 +1507,12 @@ div#navbar-ipad {
   #issue06_img0 {
     background-position: center top;
     height: 20em;
-    }
+  }
 
+  #issue07_img0 {
+    background-position: center top;
+    height: 20em;
+  }
 
 
   .shop {
@@ -1682,6 +1835,11 @@ video::-webkit-media-controls-enclosure {
   }
 
   #issue06_img0 {
+    background-position: center top;
+    height: 20em;
+  }
+
+  #issue07_img0 {
     background-position: center top;
     height: 20em;
   }
