@@ -14,181 +14,531 @@
 
 html, body {
   font-family: 'Futura', sans-serif;
-  min-height: 100%;
-  max-height: 100%;
-  overflow-x: hidden;
-  overflow-y: visible;
-  font-size: 100%;
-  margin: 0;
-}
-
-body {
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-html {
-    overflow: scroll;
-    overflow-x: hidden;
-}
-::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
-}
-/* optional: show position indicator in red */
-::-webkit-scrollbar-thumb {
-    background: #FF0000;
-}
-
-.container {
-  width: 100%;
-}
-
-.wrapper {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;  
-  
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 
-div#navbar-ipad {
-  display: none;
+.align-bottom {
+    bottom: 0%;
+    left: 12%;
 }
 
-div#navbar {
-  margin-top: 4%;
-  z-index: 10;
-}
+_::-webkit-:host:not(:root:root), .align-bottom { bottom: 16%; } 
 
-.nav {
-  letter-spacing: -.3px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
-  line-height: 100%;
-}
-
-.flex{
-   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: space-between;
-  -webkit-justify-content: space-between;
-
-}
-
-ul li {
-  display: inline;
-}
-
-ul li#logo {
-  font-size: 200%; /*30px*/
-  letter-spacing: -1.4px;
-}
-
-ul li#logo-ipad {
-  display: none;
-}
-
-ul a {
-  align-self: flex-end;
+.logo {
+  position: fixed;
+  display: block;
+  width: 100vw;
+  font-size: 35px;
+  transform: translate(0px, 0em) rotate(-90deg);
+  transform-origin: 0 0 0;
+  -webkit-transform: translate(0px, 0em) rotate(-90deg);
+  -webkit-transform-origin: 0 0 0;
 }
 
 a {
+  color: #000000;
   text-decoration: none;
-  color: inherit;
-}
-.center {
-  text-align: center;
 }
 
-.bottom-align {
+.nav-top {
+  width: 100%;
+  padding-top: 32px;
   position: absolute;
-  bottom: 5px;
-  left: 0;
+  top: 0;
+  font-size: 14px;
 }
 
-address {
-  padding-bottom: 1em;
-}
-
-address a {
-  text-decoration: none;
-  color: inherit;
-  font-style: normal;
-  font-size: .75em;
-}
-
-address p {
-  font-size: 2em;
+.nav-top ul {
+  list-style-type: none;
   margin: 0;
-  padding-top: 5px;
+  padding: 0;
+  padding-left: 52%;
 }
 
-footer {
-  padding-bottom: .25em;
+.nav-top ul li {
+  display: inline-table;
+  padding-right: 3%;
 }
 
-div.social-media img {
-  max-height: 30px;
-    max-width: 30px;
-     width: auto;
-     height: auto;
+.nav-top ul li a {
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  z-index: 10;
 }
 
-.fullscreen-bg {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
+.main {
+  padding-left: 7%;
 }
 
-.fullscreen-bg__video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: auto;
-    height: auto;
-    min-width: 100%;
-    min-height: 100%;
-    -webkit-transform: translate(-50%, -50%);
-       -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+.info {
+  line-height: 2;
 }
 
-div.slick-slider {
-  width: 100vw;
+#contact {
+  font-size: 12px;
+  line-height: 1;
 }
 
 .slider {
   margin: 0 auto;
   width: 943px;
-  margin-top: 0em;
-  margin-bottom: 1.5em;
-/*  border: 2px solid white;*/
-  height: 80%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  border: 2px solid white;
 }
+
+.video.slider {
+    margin: 0 auto;
+  width: 1000px;
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+.slick-slide {
+outline: none !important;
+}
+
+.photo {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.white-left {
+  background-image: url("images/editorial/editorial_18_001.jpg");
+  background-position: left;
+  height: 613px;
+  width: 409px;
+  margin-right: 71px;
+}
+.white-right {
+  background-image: url("images/editorial/editorial_18_001.jpg");
+  background-position: left;
+  height: 613px;
+  width: 409px;
+  margin-right: 71px;
+}
+.image-right {
+  background-position: left;
+  height: 613px;
+  width: 460px;
+}
+.image-left {
+  background-position: left;
+  height: 613px;
+  width: 460px;
+  margin-right: 20px;
+}
+
+.image-left-711 {
+  background-position: left;
+  height: 613px;
+  width: 409px;
+  margin-right: 71px;
+}
+
+.image-right-711 {
+  background-position: left;
+  height: 613px;
+  width: 409px;
+  margin-right: 71px;
+}
+.full-width-xl {
+  background-position: center;
+  height: 613px;
+  width: 940px;
+}
+.full-width {
+  height: 613px;
+  width: 909px;
+}
+
+#img1 {
+  background-image: url("images/editorial/editorial_21_001.jpg");
+}
+
+#img2 {
+  background-image: url("images/editorial/editorial_21_002.jpg");
+}
+
+#img3 {
+  background-image: url("images/editorial/editorial_21_003.jpg");
+}
+
+#img4 {
+  background-image: url("images/editorial/editorial_21_004.jpg");
+}
+
+#img5 {
+  background-image: url("images/editorial/editorial_21_005.jpg");
+}
+
+#img6 {
+  background-image: url("images/editorial/editorial_21_006.jpg");
+}
+
+#img7 {
+  background-image: url("images/editorial/editorial_21_007.jpg");
+}
+
+#img8 {
+  background-image: url("images/editorial/editorial_21_008.jpg");
+}
+
+#img9 {
+  background-image: url("images/editorial/editorial_21_009.jpg");
+}
+
+#img10 {
+  background-image: url("images/editorial/editorial_21_010.jpg");
+}
+
+#img11 {
+  background-image: url("images/editorial/editorial_21_011.jpg");
+}
+
+#img12 {
+  background-image: url("images/editorial/editorial_21_012.jpg");
+}
+
+#img13 {
+  background-image: url("images/editorial/editorial_21_013.jpg");
+}
+
+#img14 {
+  background-image: url("images/editorial/editorial_21_014.jpg");
+}
+
+#img15 {
+  background-image: url("images/editorial/editorial_21_015.jpg");
+}
+
+#img16 {
+  background-image: url("images/editorial/editorial_21_016.jpg");
+}
+
+#img17 {
+  background-image: url("images/editorial/editorial_21_017.jpg");
+}
+
+#img18 {
+  background-image: url("images/editorial/editorial_21_018.jpg");
+}
+/* 
+#img19 {
+  background-image: url("images/editorial/editorial_21_019.jpg");
+} */
+
+#img20 {
+  background-image: url("images/editorial/editorial_21_020.jpg");
+}
+
+#img21 {
+  background-image: url("images/editorial/editorial_21_021.jpg");
+}
+
+#img22 {
+  background-image: url("images/editorial/editorial_21_022.jpg");
+}
+
+#img23 {
+  background-image: url("images/editorial/editorial_21_023.jpg");
+}
+
+#img24 {
+  background-image: url("images/editorial/editorial_21_024.jpg");
+}
+
+#img25 {
+  background-image: url("images/editorial/editorial_21_025.jpg");
+}
+
+/* #img26 {
+  background-image: url("images/editorial/editorial_21_026.jpg");
+} */
+
+#img27 {
+  background-image: url("images/editorial/editorial_21_027.jpg");
+}
+
+/* #img28 {
+  background-image: url("images/editorial/editorial_21_028.jpg");
+} */
+
+#img29 {
+  background-image: url("images/editorial/editorial_21_029.jpg");
+}
+
+#img30 {
+  background-image: url("images/editorial/editorial_21_030.jpg");
+}
+
+#img31 {
+  background-image: url("images/editorial/editorial_21_031.jpg");
+}
+
+#img32 {
+  background-image: url("images/editorial/editorial_21_032.jpg");
+}
+
+#img33 {
+  background-image: url("images/editorial/editorial_21_033.jpg");
+}
+
+#img34 {
+  background-image: url("images/editorial/editorial_21_034.jpg");
+}
+
+#img35 {
+  background-image: url("images/editorial/editorial_21_035.jpg");
+}
+
+#img36 {
+  background-image: url("images/editorial/editorial_21_036.jpg");
+}
+
+#img37 {
+  background-image: url("images/editorial/editorial_21_037.jpg");
+}
+
+#img38 {
+  background-image: url("images/editorial/editorial_21_038.jpg");
+}
+
+#img39 {
+  background-image: url("images/editorial/editorial_21_039.jpg");
+}
+
+#img40 {
+  background-image: url("images/editorial/editorial_21_040.jpg");
+}
+
+#img41 {
+  background-image: url("images/editorial/editorial_21_041.jpg");
+}
+
+#img42 {
+  background-image: url("images/editorial/editorial_21_042.jpg");
+}
+
+#img43 {
+  background-image: url("images/editorial/editorial_21_043.jpg");
+}
+
+#img44 {
+  background-image: url("images/editorial/editorial_21_044.jpg");
+}
+
+#img45 {
+  background-image: url("images/editorial/editorial_21_045.jpg");
+}
+
+#img46 {
+  background-image: url("images/editorial/editorial_21_046.jpg");
+}
+
+#img47 {
+  background-image: url("images/editorial/editorial_21_047.jpg");
+}
+
+/* #img48 {
+  background-image: url("images/editorial/editorial_21_048.jpg");
+} */
+
+#img49 {
+  background-image: url("images/editorial/editorial_21_049.jpg");
+}
+
+#img50 {
+  background-image: url("images/editorial/editorial_21_050.jpg");
+}
+
+#img51 {
+  background-image: url("images/editorial/editorial_21_051.jpg");
+}
+
+#img52 {
+  background-image: url("images/editorial/editorial_21_052.jpg");
+}
+
+#img53 {
+  background-image: url("images/editorial/editorial_21_053.jpg");
+}
+
+#img54 {
+  background-image: url("images/editorial/editorial_21_054.jpg");
+}
+
+#img55 {
+  background-image: url("images/editorial/editorial_21_055.jpg");
+}
+
+#img56 {
+  background-image: url("images/editorial/editorial_21_056.jpg");
+}
+
+#img57 {
+  background-image: url("images/editorial/editorial_21_057.jpg");
+}
+
+#img58 {
+  background-image: url("images/editorial/editorial_21_058.jpg");
+}
+
+#img59 {
+  background-image: url("images/editorial/editorial_21_059.jpg");
+}
+
+#img60 {
+  background-image: url("images/editorial/editorial_21_060.jpg");
+}
+
+#img61 {
+  background-image: url("images/editorial/editorial_21_061.jpg");
+}
+
+#img62 {
+  background-image: url("images/editorial/editorial_21_062.jpg");
+}
+
+#img63 {
+  background-image: url("images/editorial/editorial_21_063.jpg");
+}
+
+#img64 {
+  background-image: url("images/editorial/editorial_21_064.jpg");
+}
+
+/* #img65 {
+  background-image: url("images/editorial/editorial_21_065.jpg");
+} */
+
+#img66 {
+  background-image: url("images/editorial/editorial_21_066.jpg");
+}
+
+#img67 {
+  background-image: url("images/editorial/editorial_21_067.jpg");
+}
+
+#img68 {
+  background-image: url("images/editorial/editorial_21_068.jpg");
+}
+
+#img69 {
+  background-image: url("images/editorial/editorial_21_069.jpg");
+}
+
+/* #img70 {
+  background-image: url("images/editorial/editorial_21_070.jpg");
+} */
+
+#img71 {
+  background-image: url("images/editorial/editorial_21_071.jpg");
+}
+
+#img72 {
+  background-image: url("images/editorial/editorial_21_072.jpg");
+}
+
+#img73 {
+  background-image: url("images/editorial/editorial_21_073.jpg");
+}
+
+#img74 {
+  background-image: url("images/editorial/editorial_21_074.jpg");
+}
+
+#img75 {
+  background-image: url("images/editorial/editorial_21_075.jpg");
+}
+
+#img76 {
+  background-image: url("images/editorial/editorial_21_076.jpg");
+}
+
+/* #img77 {
+  background-image: url("images/editorial/editorial_21_077.jpg");
+} */
+
+#img78 {
+  background-image: url("images/editorial/editorial_21_078.jpg");
+}
+
+#img79 {
+  background-image: url("images/editorial/editorial_21_079.jpg");
+}
+
+#img80 {
+  background-image: url("images/editorial/editorial_21_080.jpg");
+}
+
+/* #img81 {
+  background-image: url("images/editorial/editorial_21_081.jpg");
+} */
+
+#img82 {
+  background-image: url("images/editorial/editorial_21_082.jpg");
+}
+
+#img83 {
+  background-image: url("images/editorial/editorial_21_083.jpg");
+}
+
+#img84 {
+  background-image: url("images/editorial/editorial_21_084.jpg");
+}
+
+#img85 {
+  background-image: url("images/editorial/editorial_21_085.jpg");
+}
+
+#img86 {
+  background-image: url("images/editorial/editorial_21_086.jpg");
+}
+
+#img87 {
+  background-image: url("images/editorial/editorial_21_087.jpg");
+}
+
+#img88 {
+  background-image: url("images/editorial/editorial_21_088.jpg");
+}
+
+#img89 {
+  background-image: url("images/editorial/editorial_21_089.jpg");
+}
+
+#img90 {
+  background-image: url("images/editorial/editorial_21_090.jpg");
+}
+
+#img91 {
+  background-image: url("images/editorial/editorial_21_091.jpg");
+}
+
+#img92 {
+  background-image: url("images/editorial/editorial_21_092.jpg");
+}
+
+#img93 {
+  background-image: url("images/editorial/editorial_21_093.jpg");
+}
+
+#img94 {
+  background-image: url("images/editorial/editorial_21_094.jpg");
+}
+
+.arrow {
+  display: none;
+}
+
+_::-webkit-:host:not(:root:root), .slick-track { left: -1px; }
 
 .slick-slide {
    transition: opacity .5ms ease;
-   outline: none !important;
 }
-
 .slick-slide.opacidown {
   opacity: 0;
 }
@@ -198,1848 +548,8441 @@ div.slick-current {
    transition: opacity .5ms ease;
 }
 
-div.slick-active {
+div.slick-active{
    opacity: 1;
    transition: opacity .5ms ease;
 }
 
-section#buy {
-  text-align: center;
-
+iframe {
+  width: 995px;
+  height: 563px;
+  margin: 0 auto;
+  display: block;
 }
 
-section#buy a {
-  color: inherit;
-  text-decoration: none;
-
+#img0_personal {
+  background-image: url("images/personal/personalorder_001.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+  margin-right: 20px;
 }
 
-.margin-top {
-  margin-top: 1em;
+#img1_personal {
+  background-image: url("images/personal/personalorder_002.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
 }
 
-#no-button {
-    cursor: inherit;
-}
-/*/////////// ABOUT /////////*/
-
-
-.vertical-center {
-  position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-section#about {
-  text-align: center;
-  margin-top: 3.5%;
-}
-
-div#description {
-  margin-bottom: 2%;
-  text-align: center;
-}
-
-.bottom-center {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  bottom: 0;
-}
-
-.story-link {
-  text-decoration: underline;
-}
-
-/* /////// CURRENT /////// */
-section#current {
-  text-align: center;
+#img2_personal {
+  background-image: url("images/personal/personalorder_003.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+  margin-right: 20px;
 }
 
 
-/*///////// CARTON /////////*/
-
-.carton {
- width: 80%;
- margin-right:auto;
- margin-left:auto;
- overflow: hidden;
- padding-top: 1em;
-}
-
-.galleryItem img {
- max-width: 100%;
- -webkit-border-radius: 1px;
- -moz-border-radius: 1px;
- border-radius: 1px;
-}
-
-.galleryItem {
- float: left;
- width: 16%;
-}
-
-.small-margin {
-  margin: .5% .5% 14px 0;
-}
-
-.paypal_btn{
-display: inline-block;
-font-family: inherit;
-font-size: 1em;
-color: #000;
-padding: 2px 14px;
-margin: 0;
-background: #fff;
-border: 0;
-cursor: pointer;
-outline: none;
-}
-
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
-    -webkit-appearance: button-bevel;
+#img3_personal {
+  background-image: url("images/personal/personalorder_004.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
 }
 
 
-/*//////////// DIGITAL /////////////*/
-.banner img.celine {
-  margin-top: 1em;
+#img4_personal {
+  background-image: url("images/personal/personalorder_005.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+  margin-right: 20px;
+}
+
+#img5_personal {
+  background-image: url("images/personal/personalorder_006.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+}
+
+#img6_personal {
+  background-image: url("images/personal/personalorder_007.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+  margin-right: 20px;
+}
+
+#img7_personal {
+  background-image: url("images/personal/personalorder_008.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+}
+
+#img8_personal {
+  background-image: url("images/personal/personalorder_009.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+  margin-right: 20px;
+}
+
+#img9_personal {
+  background-image: url("images/personal/personalorder_010.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+}
+
+#img10_personal {
+  background-image: url("images/personal/personalorder_011.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+  margin-right: 20px;
+}
+
+#img11_personal {
+  background-image: url("images/personal/personalorder_012.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+}
+
+#img12_personal {
+  background-image: url("images/personal/personalorder_013.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+  margin-right: 20px;
+}
+
+#img13_personal {
+  background-image: url("images/personal/personalorder_014.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+}
+
+#img14_personal {
+  background-image: url("images/personal/personalorder_015.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+  margin-right: 20px;
+}
+
+#img15_personal {
+  background-image: url("images/personal/personalorder_016.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+}
+
+#img16_personal {
+  background-image: url("images/personal/personalorder_017.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+  margin-right: 20px;
+}
+
+#img17_personal {
+  background-image: url("images/personal/personalorder_018.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+}
+
+#img18_personal {
+  background-image: url("images/personal/personalorder_019.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+  margin-right: 20px;
+}
+
+
+#img19_personal {
+  background-image: url("images/personal/personalorder_020.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+}
+
+#img20_personal {
+  background-image: url("images/personal/personalorder_021.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+  margin-right: 20px;
+}
+
+#img21_personal {
+  background-image: url("images/personal/personalorder_022.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+}
+
+#img22_personal {
+  background-image: url("images/personal/personalorder_023.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+  margin-right: 20px;
+}
+
+#img23_personal {
+  background-image: url("images/personal/personalorder_024.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+}
+
+#img24_personal {
+  background-image: url("images/personal/personalorder_025.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+  margin-right: 20px;
+}
+
+#img25_personal {
+  background-image: url("images/personal/personalorder_026.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+}
+
+#img26_personal {
+  background-image: url("images/personal/personalorder_027.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+  margin-right: 20px;
+}
+
+#img27_personal {
+  background-image: url("images/personal/personalorder_028.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+}
+
+#img28_personal {
+  background-image: url("images/personal/personalorder_029.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+  margin-right: 20px;
+}
+
+#img29_personal {
+  background-image: url("images/personal/personalorder_030.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+}
+
+#img30_personal {
+  background-image: url("images/personal/personalorder_031.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+  margin-right: 20px;
+}
+
+#img31_personal {
+  background-image: url("images/personal/personalorder_032.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+}
+
+#img32_personal {
+  background-image: url("images/personal/personalorder_033.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+  margin-right: 20px;
+}
+
+#img33_personal {
+  background-image: url("images/personal/personalorder_034.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+}
+
+#img34_personal {
+  background-image: url("images/personal/personalorder_035.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+  margin-right: 20px;
+}
+
+#img35_personal {
+  background-image: url("images/personal/personalorder_036.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+}
+
+#img36_personal {
+  background-image: url("images/personal/personalorder_037.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+  margin-right: 20px;
+}
+
+#img37_personal {
+  background-image: url("images/personal/personalorder_038.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+}
+
+#img38_personal {
+  background-image: url("images/personal/personalorder_039.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+  margin-right: 20px;
+}
+
+#img39_personal {
+  background-image: url("images/personal/personalorder_040.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+}
+
+#img40_personal {
+  background-image: url("images/personal/personalorder_041.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+  margin-right: 20px;
+}
+
+#img41_personal {
+  background-image: url("images/personal/personalorder_042.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+}
+
+#img42_personal {
+  background-image: url("images/personal/personalorder_043.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+  margin-right: 20px;
+}
+
+#img43_personal {
+  background-image: url("images/personal/personalorder_044.jpg");
+  background-position: left;
+  height: 613px;
+  width: 460px;
+}
+
+.margin {
+  margin-top: 10px;
 }
 
 
 
-.container {
-  padding: 0;
+
+/* ----------------------- media queries ---------------------- */
+
+
+@media screen and (min-width: 570px) and (max-width: 699px) and (-webkit-min-device-pixel-ratio: 1) { 
+  .align-bottom {
+    bottom: 16.5%;
+    left: 1%;
 }
-
-.height {
-  height: 100%;
-}
-
-.slice {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  width: 25%;
-  height: 55vh;
-}
-
-
- #digital1 { 
-  background-image: url("../images/digital/slices/Slice_01.jpg");
-  margin-right: 4%;
-  }
-
-  #digital2 { 
-  background-image: url("../images/digital/slices/Slice_02.jpg");
-  margin-right: 4%;
-  }
-
-  #digital3 { 
-  background-image: url("../images/digital/slices/Slice_03.jpg");
-  margin-right: 4%;
-  }
-
-  #digital4 { 
-  background-image: url("../images/digital/slices/Slice_04.jpg");
-  }
-
- .story {
-    position: absolute;
-    left: 50%;
-    top:123%;
-    transform: translate(-50%, -50%);
-    height: 100%;
- }
-
-
- .story_image {
-  background: url("../NICOTINE02.jpg");
-  background-size: contain;
-  height: 100%;
- }
-
- #story_image_1 {
-  height: 27.2em;
-  float: left;
-  margin-right: 3%;
- }
-  
-  #story_image_3 {
-    float: right;
-    height: auto;
-    width: 65%;
-  }
-
-  .full-width-story-image {
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    width: 100%;
-    display: block;
-  }
-
- p.italic {
-  font-style: italic;
- }
-
- p.profile {
-  margin: 0;
- }
-
- div#info {
-    margin: 0 auto;
-    display: table; 
-    margin-bottom: 6em;
-    margin-top: 6em;
- }
-
- .underline {
-  text-decoration: underline;
- }
-
-  p.padding {
-    padding-top: 10%;
-  }
-
-  .margin {
-     margin-bottom: 20%;
-  }
-
-   .banner .margin {
-     margin-bottom: 10%;
-     margin-top: 5%;
-  }
-  .margin-bottom {
-    margin-bottom: 10%;
+  .nav-top ul {
+    padding-left: 51.5%;
   } 
 
-  .group:after {
-  content: "";
-  display: table;
-  clear: both;
+  .nav-top ul li {
+    display: initial;
 }
 
-p.text {
-  font-size: .8em;
+span {
+  padding-left: 3%;
 }
 
-p.credits {
-  -webkit-margin-after: 0;
-  -webkit-margin-before: 0;
+span a.number {
+  padding-left: 3%;
 }
 
-#crystal-text {
-    margin-left: auto;
-    margin-right: auto;
-    display: table;
+  .slider {
+    width: 420px;
+  }
+  
+  .white-left {
+    height: 267px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  .white-right {
+    height: 267px;
+    width: 200px;
+  }
+  .image-right {
+    height: 267px;
+    width: 200px;
+  }
+  .image-left {
+    height: 267px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  .image-left-711 {
+    height: 267px;
+    width: 200px;
+    margin-right: 47.5px;
+  }
+  .image-right-711 {
+    height: 267px;
+    width: 200px;
+  }
+  .full-width-xl {
+    height: 267px;
+    width: 420px;
+  }
+  .full-width {
+    height: 267px;
+    width: 420px;
+  }
+
+#img0_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
 }
 
-.video {
-  height: 53%;
-  width: 100%;
+#img1_personal {
+  height: 267px;
+  width: 200px;
 }
 
-section.story-menu {
-  margin-top: 10%;
+#img2_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
 }
 
-.zoom {
-    transition: transform .2s; /* Animation */
+#img3_personal {
+  height: 267px;
+  width: 200px;
 }
 
-.zoom:hover {
-    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+#img4_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img5_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img6_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img7_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img8_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img9_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img10_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img11_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img12_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img13_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img14_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img15_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img16_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img17_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img18_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img19_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img20_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img21_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img22_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img23_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img24_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img25_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img26_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img27_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img28_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img29_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img30_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img31_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img32_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img33_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img34_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img35_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img36_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img37_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img38_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img39_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img40_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img41_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img42_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img43_personal {
+  height: 267px;
+  width: 200px;
+}
+} 
+
+
+
+
+
+
+
+@media screen and (min-width: 700px) and (max-width: 799px) and (-webkit-min-device-pixel-ratio: 1) { 
+  .align-bottom {
+    bottom: 27.5%;
+    left: 1%;
+  }
+
+  _::-webkit-:host:not(:root:root), .align-bottom { bottom: 33%; }
+
+  .nav-top ul {
+    padding-left: 52%;
+  } 
+
+
+  .nav-top ul li {
+    display: initial;
+}
+
+span {
+  padding-left: 3%;
+}
+
+span a.number {
+  padding-left: 3%;
+}
+
+   .slider {
+    width: 620px;
+  }
+
+  iframe {
+    width: 750px;
+    height: 422px;
+  }
+  
+  .white-left {
+    height: 400px;
+    width: 300px;
+    margin-right: 20px;
+  }
+  .white-right {
+    height: 400px;
+    width: 300px;
+  }
+  .image-left {
+    height: 400px;
+    width: 300px;
+    margin-right: 20px;
+  }
+  .image-right {
+    height: 400px;
+    width: 300px;
+  }
+  .image-left-711 {
+    height: 400px;
+    width: 266.5px;
+    margin-right: 53.5px;
+  }
+  .image-right-711 {
+    height: 400px;
+    width: 300px;
+  }
+  .full-width {
+    height: 400px;
+    width: 620px;
+  }
+  .full-width-xl {
+    height: 400px;
+    width: 620px;
+  }
+#img0_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img1_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img2_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img3_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img4_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img5_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img6_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img7_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img8_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img9_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img10_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img11_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img12_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img13_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img14_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img15_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img16_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img17_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img18_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
 }
 
 
+#img19_personal {
+  height: 400px;
+  width: 300px;
+}
 
-  .shop {
-    display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 3em;
-    width: 100%;
-    margin-top: 2em;
-    position: absolute;
-    left: 0;
+#img20_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img21_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img22_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img23_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img24_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img25_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img26_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img27_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img28_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img29_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img30_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img31_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img32_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img33_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img34_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img35_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img36_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img37_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img38_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img39_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img40_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img41_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img42_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img43_personal {
+  height: 400px;
+  width: 300px;
+}
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 899px) and (-webkit-min-device-pixel-ratio: 1) { 
+  .align-bottom {
+    bottom: 12.5%;
+    left: 1%;
+}
+
+_::-webkit-:host:not(:root:root), .align-bottom { bottom: 16.5%; }
+
+  .nav-top ul {
+    padding-left: 52%;
+  } 
+
+
+  .nav-top ul li {
+    display: initial;
+}
+
+  span {
+  padding-left: 3%;
+}
+
+  span a.number {
+  padding-left: 3%;
+}
+
+   .slider {
+    width: 720px;
+  }
+
+  iframe {
+    width: 750px;
+    height: 422px;
+  }
+  
+  .white-left {
+    width: 350px;
+    margin-right: 20px;
+  }
+  .white-right {
+    width: 350px;
+  }
+  .image-left {
+    width: 350px;
+    margin-right: 20px;
+  }
+  .image-right {
+    width: 350px;
+  }
+  .image-left-711 {
+    width: 311px;
+    margin-right: 59px;
+  }
+  .image-right-711 {
+    width: 350px;
+  }
+  .full-width {
+    width: 720px;
+  }
+  .full-width-xl {
+    width: 720px;
+  }
+
+  #img0_personal {
+    width: 350px;
+    margin-right: 20px;
+  }
+
+  #img1_personal {
+    width: 350px;
+  }
+
+  #img2_personal {
+    width: 350px;
+    margin-right: 20px;
+  }
+
+  #img3_personal {
+    width: 350px;
+  }
+
+  #img4_personal {
+    width: 350px;
+    margin-right: 20px;
+  }
+
+  #img5_personal {
+    width: 350px;
+  }
+
+  #img6_personal {
+    width: 350px;
+    margin-right: 20px;
+  }
+
+  #img7_personal {
+    width: 350px;
+  }
+
+  #img8_personal {
+    width: 350px;
+    margin-right: 20px;
+  }
+
+  #img9_personal {
+    width: 350px;
+  }
+
+  #img10_personal {
+    width: 350px;
+    margin-right: 20px;
+  }
+
+  #img11_personal {
+    width: 350px;
+  }
+
+  #img12_personal {
+    width: 350px;
+    margin-right: 20px;
+  }
+
+  #img13_personal {
+    width: 350px;
+  }
+
+  #img14_personal {
+    width: 350px;
+    margin-right: 20px;
+  }
+
+  #img15_personal {
+    width: 350px;
+  }
+
+  #img16_personal {
+    width: 350px;
+    margin-right: 20px;
+  }
+
+  #img17_personal {
+    width: 350px;
+  }
+
+  #img18_personal {
+    width: 350px;
+    margin-right: 20px;
+  }
+
+  #img19_personal {
+    width: 350px;
+  }
+
+  #img20_personal {
+    width: 350px;
+    margin-right: 20px;
+  }
+
+  #img21_personal {
+    width: 350px;
+  }
+
+  #img22_personal {
+    width: 350px;
+    margin-right: 20px;
+  }
+
+  #img23_personal {
+    width: 350px;
+  }
+
+  #img24_personal {
+    width: 350px;
+    margin-right: 20px;
+  }
+
+  #img25_personal {
+    width: 350px;
+  }
+
+  #img26_personal {
+    width: 350px;
+    margin-right: 20px;
+  }
+
+  #img27_personal {
+    width: 350px;
+  }
+
+  #img28_personal {
+    width: 350px;
+    margin-right: 20px;
+  }
+
+  #img29_personal {
+    width: 350px;
+  }
+
+  #img30_personal {
+    width: 350px;
+    margin-right: 20px;
+  }
+
+  #img31_personal {
+    width: 350px;
+  }
+
+  #img32_personal {
+    width: 350px;
+    margin-right: 20px;
+  }
+
+  #img33_personal {
+    width: 350px;
+  }
+
+  #img34_personal {
+    width: 350px;
+    margin-right: 20px;
+  }
+
+  #img35_personal {
+    width: 350px;
+  }
+
+  #img36_personal {
+    width: 350px;
+    margin-right: 20px;
+  }
+
+  #img37_personal {
+    width: 350px;
+  }
+
+  #img38_personal {
+    width: 350px;
+    margin-right: 20px;
+  }
+
+  #img39_personal {
+    width: 350px;
+  }
+
+  #img40_personal {
+    width: 350px;
+    margin-right: 20px;
+  }
+
+  #img41_personal {
+    width: 350px;
+  }
+
+  #img42_personal {
+    width: 350px;
+    margin-right: 20px;
+  }
+
+  #img43_personal {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 999px) and (-webkit-min-device-pixel-ratio: 1) { 
+  .align-bottom {
+    bottom: 12.5%;
+    left: 2%;
+  }
+
+  _::-webkit-:host:not(:root:root), .align-bottom { bottom: 16.5%; }
+
+  .nav-top ul {
+    padding-left: 52%;
+  } 
+
+
+  .nav-top ul li {
+    display: initial;
+}
+
+span {
+  padding-left: 3%;
+}
+
+span a.number {
+  padding-left: 3%;
+}
+
+  iframe {
+    width: 750px;
+    height: 422px;
+  }
+
+  .slider {
+    width: 820px;
+  }
+
+  .white-left {
+    height: 533px;
+    width: 400px;
+    margin-right: 20px;
+  }
+  .white-right {
+    height: 533px;
+    width: 400px;
+  }
+  .image-left {
+    height: 533px;
+    width: 400px;
+    margin-right: 20px;
+  }
+  .image-right {
+    height: 533px;
+    width: 400px;
+  }
+  .image-left-711 {
+    height: 533px;
+    width: 356px;
+    margin-right: 64px;
+  }
+  .image-right-711 {
+    height: 533px;
+    width: 400px;
+  }
+  .full-width {
+    height: 533px;
+    width: 820px;
+  }
+  .full-width-xl {
+    height: 533px;
+    width: 820px;
   }
 
 
-.shop-child {
-  flex-grow:0;
-  align-self: center;
+#img0_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
 }
 
-.shop-item-container {
-  padding-top: 1em;
-  padding-bottom: 2em;
-  margin: 0 auto;
+#img1_personal {
+  height: 533px;
+  width: 400px;
 }
 
-.shop-image {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 25em;
+#img2_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
 }
 
-/*////////////STOCKISTS///////////*/
+#img3_personal {
+  height: 533px;
+  width: 400px;
+}
 
-section#stockists {
- text-align: center;
-    margin-top: 10%;
-    margin-bottom: 3%;
+#img4_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img5_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img6_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img7_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img8_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img9_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img10_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img11_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img12_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img13_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img14_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img15_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img16_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img17_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img18_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img19_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img20_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img21_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img22_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img23_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img24_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img25_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img26_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img27_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img28_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img29_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img30_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img31_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img32_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img33_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img34_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img35_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img36_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img37_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img38_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img39_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img40_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img41_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img42_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img43_personal {
+  height: 533px;
+  width: 400px;
+}
+
+
 
 }
 
-/*//////// SLIDER IMAGES /////////*/
+@media screen and (min-width: 1000px) and (max-width: 1099px) and (-webkit-min-device-pixel-ratio: 1) { 
+  .align-bottom {
+    bottom: 12.5%;
+    left: 6%;
+  }
 
-.slider-image {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 32em;
-  width: 58em;
+_::-webkit-:host:not(:root:root), .align-bottom { bottom: 16.5%; }
+
+  .nav-top ul {
+    padding-left: 52%;
+  } 
+
+
+  .nav-top ul li {
+    display: initial;
 }
 
-#img0 {
-  background-image: url("../images/issue01/NICOTINECOVER.jpg");
+span {
+  padding-left: 3%;
+}
+
+span a.number {
+  padding-left: 3%;
+}
+
+   .slider {
+    width: 820px;
+  }
+
+  iframe {
+    width: 750px;
+    height: 422px;
+  }
+
+  .white-left {
+    height: 533px;
+    width: 400px;
+    margin-right: 20px;
+  }
+  .white-right {
+    height: 533px;
+    width: 400px;
+  }
+  .image-left {
+    height: 533px;
+    width: 400px;
+    margin-right: 20px;
+  }
+  .image-right {
+    height: 533px;
+    width: 400px;
+  }
+  .image-left-711 {
+    height: 533px;
+    width: 356px;
+    margin-right: 64px;
+  }
+  .image-right-711 {
+    height: 533px;
+    width: 400px;
+  }
+  .full-width {
+    height: 533px;
+    width: 820px;
+  }
+  .full-width-xl {
+    height: 533px;
+    width: 820px;
+  }
+
+
+#img0_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img1_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img2_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img3_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img4_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img5_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img6_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img7_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img8_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img9_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img10_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img11_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img12_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img13_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img14_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img15_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img16_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img17_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img18_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img19_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img20_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img21_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img22_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img23_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img24_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img25_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img26_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img27_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img28_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img29_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img30_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img31_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img32_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img33_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img34_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img35_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img36_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img37_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img38_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img39_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img40_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img41_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img42_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img43_personal {
+  height: 533px;
+  width: 400px;
+}
+
+
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1)  { 
+  .align-bottom {
+    bottom: 12.5%;
+    left: 8%;
+  }
+
+  _::-webkit-:host:not(:root:root), .align-bottom { bottom: 6.5%; left: 10%; } 
+
+  .nav-top ul {
+    padding-left: 52%;
+  } 
+
+  .nav-top ul li {
+    display: initial;
+}
+
+span {
+  padding-left: 3%;
+}
+
+span a.number {
+  padding-left: 3%;
+}
+   .slider {
+    width: 820px;
+  }
+
+  .video.slider {
+    width: 940px;
+}
+
+  iframe {
+    width: 750px;
+    height: 422px;
+  }
+
+ .white-left {
+    height: 533px;
+    width: 400px;
+    margin-right: 20px;
+  }
+  .white-right {
+    height: 533px;
+    width: 400px;
+  }
+  .image-left {
+    height: 533px;
+    width: 400px;
+    margin-right: 20px;
+  }
+  .image-right {
+    height: 533px;
+    width: 400px;
+  }
+  .image-left-711 {
+    height: 533px;
+    width: 356px;
+    margin-right: 64px;
+  }
+  .image-right-711 {
+    height: 533px;
+    width: 400px;
+  }
+  .full-width {
+    height: 533px;
+    width: 820px;
+  }
+  .full-width-xl {
+    height: 533px;
+    width: 820px;
+  }
+
+#img0_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img1_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img2_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img3_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img4_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img5_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img6_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img7_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img8_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img9_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img10_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img11_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img12_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img13_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img14_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img15_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img16_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img17_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img18_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img19_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img20_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img21_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img22_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img23_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img24_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img25_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img26_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img27_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img28_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img29_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img30_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img31_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img32_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img33_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img34_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img35_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img36_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img37_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img38_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img39_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img40_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img41_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img42_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img43_personal {
+  height: 533px;
+  width: 400px;
+}
+
+}
+
+/* @media screen and (min-width: 1200px) and (max-width: 1299px) and (-webkit-min-device-pixel-ratio: 1) { 
+.align-bottom {
+    left: 9%;
+  } */
+
+/*_::-webkit-:host:not(:root:root), .align-bottom { bottom: 15%; } */
+
+/* } */
+
+@media screen and (min-width: 1200px) and (max-width: 1499px) and (-webkit-min-device-pixel-ratio: 1) { 
+  .align-bottom {
+    bottom: 10%;
+    left: 6%;
+  }
+
+_::-webkit-:host:not(:root:root), .align-bottom { bottom: 15%; } 
+
+}
+
+@media screen and (min-width: 1500px) and (max-width: 1799px) and (-webkit-min-device-pixel-ratio: 1)  { 
+  .align-bottom {
+    bottom: 4%;
+    left: 5%;
+}
+
+  .slider {
+    width: 1220px;
+  }
+
+  .white-left {
+    height: 799.5px;
+    width: 533.25px;
+    margin-right: 86.75px;
+  }
+  .white-right {
+    height: 799.5px;
+    width: 533.25px;
+    margin-right: 86.75px;
+  }
+  .image-left {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+  .image-right {
+    height: 799.5px;
+    width: 600px;
+  }
+  .image-left-711 {
+    height: 799.5px;
+    width: 533.25px;
+    margin-right: 86.75px;
+  }
+  .image-right-711 {
+    height: 799.5px;
+    width: 533.25px;
+    margin-right: 66.75px;
+  }
+  .full-width {
+    height: 799.5px;
+    width: 1185px;
+  }
+  .full-width-xl {
+    height: 799.5px;
+    width: 1199.25px;
+  }
+
+    #img0_personal {
+      height: 799.5px;
+  width: 535.5px;
+  margin-right: 86.75px;
+}
+
+#img1_personal {
+  height: 799.5px;
+  width: 535.5px;
+  margin-right: 86.75px;
+}
+
+#img2_personal {
+  height: 799.5px;
+  width: 600px;
+  margin-right: 20px;
+}
+
+#img3_personal {
+  height: 799.5px;
+  width: 600px;
+}
+
+#img4_personal {
+  height: 799.5px;
+  width: 535.5px;
+  margin-right: 86.75px;
+}
+
+#img5_personal {
+  height: 799.5px;
+  width: 535.5px;
+  margin-right: 86.75px;
+}
+
+#img6_personal {
+  height: 799.5px;
+  width: 600px;
+  margin-right: 20px;
+}
+
+#img7_personal {
+  height: 799.5px;
+  width: 600px;
+}
+
+#img8_personal {
+  height: 799.5px;
+  width: 535.5px;
+  margin-right: 86.75px;
+}
+
+#img9_personal {
+  height: 799.5px;
+  width: 535.5px;
+  margin-right: 86.75px;
+}
+
+#img10_personal {
+  height: 799.5px;
+  width: 600px;
+  margin-right: 20px;
+}
+
+#img11_personal {
+  height: 799.5px;
+  width: 600px;
+}
+
+#img12_personal {
+  height: 799.5px;
+  width: 535.5px;
+  margin-right: 86.75px;
+}
+
+#img13_personal {
+  height: 799.5px;
+  width: 535.5px;
+  margin-right: 86.75px;
+}
+
+#img14_personal {
+  height: 799.5px;
+  width: 600px;
+  margin-right: 20px;
+}
+
+#img15_personal {
+  height: 799.5px;
+  width: 600px;
+}
+
+#img16_personal {
+  height: 799.5px;
+  width: 535.5px;
+  margin-right: 86.75px;
+}
+
+#img17_personal {
+  height: 799.5px;
+  width: 535.5px;
+  margin-right: 86.75px;
+}
+
+#img18_personal {
+  height: 799.5px;
+  width: 600px;
+  margin-right: 20px;
+}
+
+#img19_personal {
+  height: 799.5px;
+  width: 600px;
+}
+
+#img20_personal {
+  height: 799.5px;
+  width: 535.5px;
+  margin-right: 86.75px;
+}
+
+#img21_personal {
+  height: 799.5px;
+  width: 535.5px;
+  margin-right: 86.75px;
+}
+
+#img22_personal {
+  height: 799.5px;
+  width: 535.5px;
+  margin-right: 86.75px;
+}
+
+#img23_personal {
+  height: 799.5px;
+  width: 535.5px;
+  margin-right: 86.75px;
+}
+
+#img24_personal {
+  height: 799.5px;
+  width: 600px;
+  margin-right: 20px;
+}
+
+#img25_personal {
+  height: 799.5px;
+  width: 600px;
+}
+
+#img26_personal {
+  height: 799.5px;
+  width: 535.5px;
+  margin-right: 86.75px;
+}
+
+#img27_personal {
+  height: 799.5px;
+  width: 535.5px;
+  margin-right: 86.75px;
+}
+
+#img28_personal {
+  height: 799.5px;
+  width: 600px;
+  margin-right: 20px;
+}
+
+#img29_personal {
+  height: 799.5px;
+  width: 600px;
+}
+
+#img30_personal {
+  height: 799.5px;
+  width: 600px;
+  margin-right: 20px;
+}
+
+#img31_personal {
+  height: 799.5px;
+  width: 600px;
+}
+
+#img32_personal {
+  height: 799.5px;
+  width: 535.5px;
+  margin-right: 86.75px;
+}
+
+#img33_personal {
+  height: 799.5px;
+  width: 535.5px;
+  margin-right: 86.75px;
+}
+
+#img34_personal {
+  height: 799.5px;
+  width: 600px;
+  margin-right: 20px;
+}
+
+#img35_personal {
+  height: 799.5px;
+  width: 600px;
+}
+
+#img36_personal {
+  height: 799.5px;
+  width: 600px;
+  margin-right: 20px;
+}
+
+#img37_personal {
+  height: 799.5px;
+  width: 600px;
+}
+
+#img38_personal {
+  height: 799.5px;
+  width: 535.5px;
+  margin-right: 86.75px;
+}
+
+#img39_personal {
+  height: 799.5px;
+  width: 535.5px;
+  margin-right: 86.75px;
+}
+
+#img40_personal {
+  height: 799.5px;
+  width: 600px;
+  margin-right: 20px;
+}
+
+#img41_personal {
+  height: 799.5px;
+  width: 600px;
+}
+
+#img42_personal {
+  height: 799.5px;
+  width: 535.5px;
+  margin-right: 86.75px;
+}
+
+#img43_personal {
+  height: 799.5px;
+  width: 535.5px;
+  margin-right: 86.75px;
+}
+
+
+}
+
+/* @media screen and (min-width: 1600px) and (max-width: 1699px) and (-webkit-min-device-pixel-ratio: 1)  { 
+  .align-bottom {
+    bottom: 7.5%;
+    left: 10%;
+  }
+
+  .nav-top {
+    font-size: 18px;
+  }
+
+  .nav-top ul {
+    padding-left: 51.8%;
+  }
+  
+  .logo {
+    font-size: 45px;
+  }
+
+.slider {
+    width: 1220px;
+  }
+
+  .white-left {
+    height: 799.5px;
+    width: 533.25px;
+    margin-right: 86.75px;
+  }
+  .white-right {
+    height: 799.5px;
+    width: 533.25px;
+    margin-right: 86.75px;
+  }
+  .image-left {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+  .image-right {
+    height: 799.5px;
+    width: 600px;
+  }
+  .image-left-711 {
+    height: 799.5px;
+    width: 533.25px;
+    margin-right: 86.75px;
+  }
+  .image-right-711 {
+    height: 799.5px;
+    width: 533.25px;
+    margin-right: 66.75px;
+  }
+  .full-width {
+    height: 799.5px;
+    width: 1185px;
+  }
+  .full-width-xl {
+    height: 799.5px;
+    width: 1199.25px;
+  }
+ 
+    
+  #img0_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img1_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img2_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img3_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img4_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img5_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img6_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img7_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img8_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img9_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img10_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img11_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img12_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img13_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img14_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img15_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img16_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img17_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img18_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img19_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img20_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img21_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img22_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img23_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img24_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img25_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img26_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img27_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img28_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img29_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img30_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img31_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img32_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img33_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img34_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img35_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img36_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img37_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img38_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img39_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img40_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img41_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img42_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img43_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+}
+
+@media screen and (min-width: 1700px) and (max-width: 1799px) and (-webkit-min-device-pixel-ratio: 1)  { 
+  .align-bottom {
+    bottom: 7.5%;
+    left: 12%;
+  }
+
+  .nav-top {
+    font-size: 20px;
+  }
+
+  .nav-top ul {
+    padding-left: 51.8%;
+  }
+  
+  .logo {
+    font-size: 50px;
+  }
+
+  .slider {
+    width: 1220px;
+  }
+
+  .white-left {
+    height: 799.5px;
+    width: 533.25px;
+    margin-right: 86.75px;
+  }
+  .white-right {
+    height: 799.5px;
+    width: 533.25px;
+    margin-right: 86.75px;
+  }
+  .image-left {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+  .image-right {
+    height: 799.5px;
+    width: 600px;
+  }
+  .image-left-711 {
+    height: 799.5px;
+    width: 533.25px;
+    margin-right: 86.75px;
+  }
+  .image-right-711 {
+    height: 799.5px;
+    width: 533.25px;
+    margin-right: 66.75px;
+  }
+  .full-width {
+    height: 799.5px;
+    width: 1185px;
+  }
+  .full-width-xl {
+    height: 799.5px;
+    width: 1199.25px;
+  }
+
+  #img0_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px; 
+  }
+
+  #img1_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img2_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img3_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img4_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img5_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img6_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img7_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img8_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img9_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img10_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img11_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img12_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img13_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img14_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img15_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img16_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img17_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img18_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img19_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img20_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img21_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img22_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img23_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img24_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img25_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img26_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img27_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img28_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img29_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img30_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img31_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img32_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img33_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img34_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img35_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img36_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img37_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img38_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img39_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img40_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img41_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img42_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img43_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+} */
+
+@media screen and (min-width: 1800px) and (max-width: 1899px) and (-webkit-min-device-pixel-ratio: 1)  { 
+  .align-bottom {
+     bottom: 13.5%;
+    left: 15%;
+  }
+
+  .nav-top {
+    font-size: 20px;
+  }
+
+  .nav-top ul {
+    padding-left: 51.8%;
+  }
+
+  .logo {
+    font-size: 50px;
+  }
+  
+  .slider {
+    width: 1220px;
+  }
+
+  .white-left {
+    height: 799.5px;
+    width: 533.25px;
+    margin-right: 86.75px;
+  }
+  .white-right {
+    height: 799.5px;
+    width: 533.25px;
+    margin-right: 86.75px;
+  }
+  .image-left {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+  .image-right {
+    height: 799.5px;
+    width: 600px;
+  }
+  .image-left-711 {
+    height: 799.5px;
+    width: 533.25px;
+    margin-right: 86.75px;
+  }
+  .image-right-711 {
+    height: 799.5px;
+    width: 533.25px;
+    margin-right: 66.75px;
+  }
+  .full-width {
+    height: 799.5px;
+    width: 1185px;
+  }
+  .full-width-xl {
+    height: 799.5px;
+    width: 1199.25px;
+  }
+
+
+  #img0_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img1_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img2_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img3_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img4_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img5_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img6_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img7_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img8_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img9_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img10_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img11_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img12_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img13_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img14_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img15_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img16_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img17_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img18_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img19_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img20_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img21_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img22_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img23_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img24_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img25_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img26_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img27_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img28_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img29_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img30_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img31_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img32_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img33_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img34_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img35_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img36_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img37_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img38_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img39_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img40_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img41_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img42_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img43_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+}
+
+
+@media screen and (min-width: 1900px) and (max-width: 2099px) and (-webkit-min-device-pixel-ratio: 1) { 
+  .align-bottom {
+    bottom: 13.5%;
+    left: 7%;
+  }
+_::-webkit-:host:not(:root:root), .align-bottom { left: 22% } 
+
+
+
+
+  .nav-top {
+    font-size: 20px;
+  }
+
+  .nav-top ul {
+    padding-left: 52.2%;
+  }
+
+.logo {
+    font-size: 50px;
+  }
+ .slider {
+    width: 1220px;
+  }
+
+  .white-left {
+    height: 799.5px;
+    width: 533.25px;
+    margin-right: 86.75px;
+  }
+  .white-right {
+    height: 799.5px;
+    width: 533.25px;
+    margin-right: 86.75px;
+  }
+  .image-left {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+  .image-right {
+    height: 799.5px;
+    width: 600px;
+  }
+  .image-left-711 {
+    height: 799.5px;
+    width: 533.25px;
+    margin-right: 86.75px;
+  }
+  .image-right-711 {
+    height: 799.5px;
+    width: 533.25px;
+    margin-right: 66.75px;
+  }
+  .full-width {
+    height: 799.5px;
+    width: 1185px;
+  }
+  .full-width-xl {
+    height: 799.5px;
+    width: 1199.25px;
+  }
+
+
+  #img0_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img1_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img2_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img3_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img4_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img5_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img6_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img7_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img8_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img9_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img10_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img11_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img12_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img13_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img14_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img15_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img16_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img17_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img18_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img19_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img20_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img21_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img22_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img23_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img24_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img25_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img26_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img27_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img28_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img29_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img30_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img31_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img32_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img33_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img34_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img35_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img36_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img37_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img38_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img39_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img40_personal {
+    height: 799.5px;
+    width: 600px;
+    margin-right: 20px;
+  }
+
+  #img41_personal {
+    height: 799.5px;
+    width: 600px;
+  }
+
+  #img42_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+
+  #img43_personal {
+    height: 799.5px;
+    width: 535.5px;
+    margin-right: 86.75px;
+  }
+}
+
+
+@media screen and (min-width: 2100px) and (max-width: 2199px) and (-webkit-min-device-pixel-ratio: 1) {
+  .align-bottom {
+    bottom: 13.5%;
+    left: 10%;
+  }
+
+  .nav-top {
+    font-size: 20px;
+  }
+
+  .nav-top ul {
+    padding-left: 52.2%;
+  }
+
+ .logo {
+    font-size: 50px;
+  }
+
+ .slider {
+    width: 1600px;
+  }
+  
+  .white-left {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+  .white-right {
+    height: 1066px;
+    width: 800px;
+  }
+  .image-left {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+  .image-right {
+    height: 1066px;
+    width: 800px;
+  }
+  .image-left-711 {
+    height: 1066px;
+    width: 712px;
+    margin-right: 108px;
+  }
+  .image-right-711 {
+    height: 1066px;
+    width: 800px;
+  }
+  .full-width {
+    height: 1066px;
+    width: 1580px;
+  }
+  .full-width-xl {
+    height: 1066px;
+    width: 1599px;
+  }
+
+  #img0_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img1_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img2_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img3_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img4_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img5_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img6_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img7_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img8_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img9_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img10_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img11_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img12_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img13_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img14_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img15_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img16_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img17_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img18_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img19_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img20_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img21_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img22_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img23_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img24_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img25_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img26_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img27_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img28_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img29_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img30_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img31_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img32_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img33_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img34_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img35_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img36_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img37_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img38_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img39_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img40_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img41_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img42_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img43_personal {
+    height: 1066px;
+    width: 800px;
+  }
+}
+
+@media screen and (min-width: 2200px) and (max-width: 2399px) and (-webkit-min-device-pixel-ratio: 1) {
+  .align-bottom {
+    bottom: 13.5%;
+    left: 13%;
+  }
+
+  .slick-track
+{
+    left: -1px;
+}
+  .nav-top {
+    font-size: 20px;
+  }
+
+  .nav-top ul {
+    padding-left: 52.2%;
+  }
+
+ .logo {
+    font-size: 50px;
+  }
+ .slider {
+    width: 1620px;
+  }
+  
+  .white-left {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+  .white-right {
+    height: 1066px;
+    width: 800px;
+  }
+  .image-left {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+  .image-right {
+    height: 1066px;
+    width: 800px;
+  }
+  .image-left-711 {
+    height: 1066px;
+    width: 712px;
+    margin-right: 108px;
+  }
+  .image-right-711 {
+    height: 1066px;
+    width: 800px;
+  }
+  .full-width {
+    height: 1066px;
+    width: 1580px;
+  }
+  .full-width-xl {
+    height: 1066px;
+    width: 1599px;
+  }
+  
+  #img0_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img1_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img2_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img3_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img4_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img5_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img6_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img7_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img8_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img9_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img10_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img11_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img12_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img13_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img14_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img15_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img16_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img17_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img18_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img19_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img20_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img21_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img22_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img23_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img24_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img25_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img26_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img27_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img28_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img29_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img30_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img31_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img32_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img33_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img34_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img35_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img36_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img37_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img38_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img39_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img40_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img41_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img42_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img43_personal {
+    height: 1066px;
+    width: 800px;
+  }
+}
+
+@media screen and (min-width: 2400px)  {
+  .align-bottom {
+    bottom: 13.5%;
+    left: 16%;
+  }
+
+  .slick-track
+{
+    left: -1px;
+}
+  .nav-top {
+    font-size: 20px;
+  }
+
+  .nav-top ul {
+    padding-left: 52.2%;
+  }
+
+  .logo {
+    font-size: 50px;
+  }
+
+  .slider {
+    width: 1620px;
+  }
+  
+  .white-left {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+  .white-right {
+    height: 1066px;
+    width: 800px;
+  }
+  .image-left {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+  .image-right {
+    height: 1066px;
+    width: 800px;
+  }
+  .image-left-711 {
+    height: 1066px;
+    width: 712px;
+    margin-right: 108px;
+  }
+  .image-right-711 {
+    height: 1066px;
+    width: 800px;
+  }
+  .full-width {
+    height: 1066px;
+    width: 1580px;
+  }
+  .full-width-xl {
+    height: 1066px;
+    width: 1599px;
+  }
+  #img0_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img1_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img2_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img3_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img4_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img5_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img6_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img7_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img8_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img9_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img10_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img11_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img12_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img13_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img14_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img15_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img16_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img17_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img18_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img19_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img20_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img21_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img22_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img23_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img24_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img25_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img26_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img27_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img28_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img29_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img30_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img31_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img32_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img33_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img34_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img35_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img36_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img37_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img38_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img39_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img40_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img41_personal {
+    height: 1066px;
+    width: 800px;
+  }
+
+  #img42_personal {
+    height: 1066px;
+    width: 800px;
+    margin-right: 20px;
+  }
+
+  #img43_personal {
+    height: 1066px;
+    width: 800px;
+  }
+}
+
+
+
+
+/* ----------- iPad 1 and 2 ----------- */
+
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .slick-track
+{
+    left: -1px;
+}
+.main {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+}
+
+/* iPad Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .main {
+    padding-left: 0.5%;
+}
+
+.slider {
+  margin-top: 200px;
+}
+
+.nav-top ul {
+    padding-left: 49%;
+}
+
+  iframe {
+    width: 750px;
+    height: 422px;
+}
+}
+
+/* iPad Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+.align-bottom {
+  bottom: 13.5%;
+  left: 4%;
+}
+
+.nav-top ul {
+    padding-left: 49%;
+}
+
+  .main {
+    padding-left: 0.5%;
+}
+
+
+  iframe {
+    width: 750px;
+    height: 422px;
+}
+}
+
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* iPhone 5 and 5S Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .slick-track
+{
+    left: -1px;
+}
+
+.main {
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 #img1 {
-  background-image: url("../images/issue01/NICOTINE01.jpg");
+  background-image: url("images/editorial/mobile/editorial_21_001.jpg");
 }
 
 #img2 {
-  background-image: url("../images/issue01/NICOTINE02.jpg");
+  background-image: url("images/editorial/mobile/editorial_21_002.jpg");
 }
 
 #img3 {
-  background-image: url("../images/issue01/NICOTINE03.jpg");
+  background-image: url("images/editorial/mobile/editorial_21_003.jpg");
 }
 
 #img4 {
-  background-image: url("../images/issue01/NICOTINE04.jpg");
+  background-image: url("images/editorial/mobile/editorial_21_004.jpg");
 }
 
 #img5 {
-  background-image: url("../images/issue01/NICOTINE05.jpg");
+  background-image: url("images/editorial/mobile/editorial_21_005.jpg");
 }
 
 #img6 {
-  background-image: url("../images/issue01/NICOTINE06.jpg");
+  background-image: url("images/editorial/mobile/editorial_21_006.jpg");
 }
 
 #img7 {
-  background-image: url("../images/issue01/NICOTINE07.jpg");
+  background-image: url("images/editorial/mobile/editorial_21_007.jpg");
 }
 
 #img8 {
-  background-image: url("../images/issue01/NICOTINE08.jpg");
+  background-image: url("images/editorial/mobile/editorial_21_008.jpg");
 }
 
 #img9 {
-  background-image: url("../images/issue01/NICOTINE09.jpg");
+  background-image: url("images/editorial/mobile/editorial_21_009.jpg");
 }
 
 #img10 {
-  background-image: url("../images/issue01/NICOTINE10.jpg");
+  background-image: url("images/editorial/mobile/editorial_21_010.jpg");
 }
 
 #img11 {
-  background-image: url("../images/issue01/NICOTINE11.jpg");
+  background-image: url("images/editorial/mobile/editorial_21_011.jpg");
 }
 
 #img12 {
-  background-image: url("../images/issue01/NICOTINE12.jpg");
+  background-image: url("images/editorial/mobile/editorial_21_012.jpg");
 }
 
 #img13 {
-  background-image: url("../images/issue01/NICOTINE13.jpg");
+  background-image: url("images/editorial/mobile/editorial_21_013.jpg");
 }
 
 #img14 {
-  background-image: url("../images/issue01/NICOTINE14.jpg");
+  background-image: url("images/editorial/mobile/editorial_21_014.jpg");
 }
 
 #img15 {
-  background-image: url("../images/issue01/NICOTINE15.jpg");
+  background-image: url("images/editorial/mobile/editorial_21_015.jpg");
 }
 
 #img16 {
-  background-image: url("../images/issue01/NICOTINE16.jpg");
+  background-image: url("images/editorial/mobile/editorial_21_016.jpg");
 }
 
 #img17 {
-  background-image: url("../images/issue01/NICOTINE17.jpg");
+  background-image: url("images/editorial/mobile/editorial_21_017.jpg");
 }
 
-#issue02_img0 {
-  background-image: url("../images/issue02/NICOTINE02COVER.jpg");
+#img18 {
+  background-image: url("images/editorial/mobile/editorial_21_018.jpg");
 }
+/* 
+#img19 {
+  background-image: url("images/editorial/mobile/editorial_21_019.jpg");
+} */
 
-#issue02_img1 {
-  background-image: url("../images/issue02/NICOTINE01.jpg");
+#img20 {
+  background-image: url("images/editorial/mobile/editorial_21_020.jpg");
 }
 
-#issue02_img2 {
-  background-image: url("../images/issue02/NICOTINE02.jpg");
+#img21 {
+  background-image: url("images/editorial/mobile/editorial_21_021.jpg");
 }
 
-#issue02_img3 {
-  background-image: url("../images/issue02/NICOTINE03.jpg");
+#img22 {
+  background-image: url("images/editorial/mobile/editorial_21_022.jpg");
 }
 
-#issue02_img4 {
-  background-image: url("../images/issue02/NICOTINE04.jpg");
+#img23 {
+  background-image: url("images/editorial/mobile/editorial_21_023.jpg");
 }
 
-#issue02_img5 {
-  background-image: url("../images/issue02/NICOTINE05.jpg");
+#img24 {
+  background-image: url("images/editorial/mobile/editorial_21_024.jpg");
 }
 
-#issue02_img6 {
-  background-image: url("../images/issue02/NICOTINE06.jpg");
+#img25 {
+  background-image: url("images/editorial/mobile/editorial_21_025.jpg");
 }
 
-#issue02_img7 {
-  background-image: url("../images/issue02/NICOTINE07.jpg");
-}
-
-#issue02_img8 {
-  background-image: url("../images/issue02/NICOTINE08.jpg");
-}
-
-#issue02_img9 {
-  background-image: url("../images/issue02/NICOTINE09.jpg");
-}
-
-#issue02_img10 {
-  background-image: url("../images/issue02/NICOTINE10.jpg");
-}
-
-#issue02_img11 {
-  background-image: url("../images/issue02/NICOTINE11.jpg");
-}
-
-#issue02_img12 {
-  background-image: url("../images/issue02/NICOTINE12.jpg");
-}
-
-#issue02_img13 {
-  background-image: url("../images/issue02/NICOTINE13.jpg");
-}
-
-#issue02_img14 {
-  background-image: url("../images/issue02/NICOTINE14.jpg");
-}
-
-#issue02_img15 {
-  background-image: url("../images/issue02/NICOTINE15.jpg");
-}
-
-#issue02_img16 {
-  background-image: url("../images/issue02/NICOTINE16.jpg");
-}
-
-#issue02_img17 {
-  background-image: url("../images/issue02/NICOTINE17.jpg");
-}
-
-#issue02_img18 {
-  background-image: url("../images/issue02/NICOTINE18.jpg");
-}
-
-#issue02_img19 {
-  background-image: url("../images/issue02/NICOTINE02BACKCOVER.jpg");
-}
-
-
-#issue03_img0 {
-  background-image: url("../images/issue03/NICOTINE03COVER.jpg");
-}
-
-#issue03_img1 {
-  background-image: url("../images/issue03/NICOTINE03COVER2.jpg");
-}
-
-#issue03_img2 {
-  background-image: url("../images/issue03/NICOTINE03COVER3.jpg");
-}
-
-#issue03_img3 {
-  background-image: url("../images/issue03/NICOTINE01.jpg");
-}
-
-#issue03_img4 {
-  background-image: url("../images/issue03/NICOTINE02.jpg");
-}
-
-#issue03_img5 {
-  background-image: url("../images/issue03/NICOTINE03.jpg");
-}
-
-#issue03_img6 {
-  background-image: url("../images/issue03/NICOTINE04.jpg");
-}
-
-#issue03_img7 {
-  background-image: url("../images/issue03/NICOTINE05.jpg");
-}
-
-#issue03_img8 {
-  background-image: url("../images/issue03/NICOTINE06.jpg");
-}
-
-#issue03_img9 {
-  background-image: url("../images/issue03/NICOTINE07.jpg");
-}
-
-#issue03_img10 {
-  background-image: url("../images/issue03/NICOTINE08.jpg");
-}
-
-#issue03_img11 {
-  background-image: url("../images/issue03/NICOTINE09.jpg");
-}
-
-#issue03_img12 {
-  background-image: url("../images/issue03/NICOTINE10.jpg");
-}
-
-#issue03_img13 {
-  background-image: url("../images/issue03/NICOTINE11.jpg");
-}
-
-#issue03_img14 {
-  background-image: url("../images/issue03/NICOTINE12.jpg");
-}
-
-#issue03_img15 {
-  background-image: url("../images/issue03/NICOTINE13.jpg");
-}
-
-#issue03_img16 {
-  background-image: url("../images/issue03/NICOTINE14.jpg");
-}
-
-#issue03_img17 {
-  background-image: url("../images/issue03/NICOTINE15.jpg");
-}
-
-#issue03_img18 {
-  background-image: url("../images/issue03/NICOTINE16.jpg");
-}
-
-#issue03_img19 {
-  background-image: url("../images/issue03/NICOTINE17.jpg");
-}
-
-#issue03_img20 {
-  background-image: url("../images/issue03/NICOTINE18.jpg");
-}
-
-#issue03_img21 {
-  background-image: url("../images/issue03/NICOTINE19.jpg");
-}
-
-#issue03_img22 {
-  background-image: url("../images/issue03/NICOTINE20.jpg");
-}
-
-#issue03_img23 {
-  background-image: url("../images/issue03/NICOTINE21.jpg");
-}
-
-
-
-#issue04_img0 {
-  background-image: url("../images/issue04/NICOTINE_COVER_1.jpg");
-}
-
-#issue04_img1 {
-  background-image: url("../images/issue04/NICOTINE_COVER_2.jpg");
-}
-
-#issue04_img2 {
-  background-image: url("../images/issue04/NICOTINE_COVER_3.jpg");
-}
-
-#issue04_img3 {
-  background-image: url("../images/issue04/NICOTINEPREVIEW01.jpg");
-}
-
-#issue04_img4 {
-  background-image: url("../images/issue04/NICOTINEPREVIEW02.jpg");
-}
-
-#issue04_img5 {
-  background-image: url("../images/issue04/NICOTINEPREVIEW03.jpg");
-}
-
-#issue04_img6 {
-  background-image: url("../images/issue04/NICOTINEPREVIEW04.jpg");
-}
-
-#issue04_img7 {
-  background-image: url("../images/issue04/NICOTINEPREVIEW05.jpg");
-}
-
-#issue04_img8 {
-  background-image: url("../images/issue04/NICOTINEPREVIEW06.jpg");
-}
-
-#issue04_img9 {
-  background-image: url("../images/issue04/NICOTINEPREVIEW07.jpg");
-}
-
-#issue04_img10 {
-  background-image: url("../images/issue04/NICOTINEPREVIEW08.jpg");
-}
-
-#issue04_img11 {
-  background-image: url("../images/issue04/NICOTINEPREVIEW09.jpg");
-}
-
-#issue04_img12 {
-  background-image: url("../images/issue04/NICOTINEPREVIEW10.jpg");
-}
-
-#issue04_img13 {
-  background-image: url("../images/issue04/NICOTINEPREVIEW11.jpg");
-}
-
-#issue04_img14 {
-  background-image: url("../images/issue04/NICOTINEPREVIEW12.jpg");
-}
+/* #img26 {
+  background-image: url("images/editorial/mobile/editorial_21_026.jpg");
+} */
 
-#issue04_img15 {
-  background-image: url("../images/issue04/NICOTINEPREVIEW13.jpg");
+#img27 {
+  background-image: url("images/editorial/mobile/editorial_21_027.jpg");
 }
 
-#issue04_img16 {
-  background-image: url("../images/issue04/NICOTINEPREVIEW14.jpg");
-}
-
-#issue04_img17 {
-  background-image: url("../images/issue04/NICOTINEPREVIEW15.jpg");
-}
-
-#issue04_img18 {
-  background-image: url("../images/issue04/NICOTINEPREVIEW16.jpg");
-}
+/* #img28 {
+  background-image: url("images/editorial/mobile/editorial_21_028.jpg");
+} */
 
-#issue04_img19 {
-  background-image: url("../images/issue04/NICOTINEPREVIEW17.jpg");
+#img29 {
+  background-image: url("images/editorial/mobile/editorial_21_029.jpg");
 }
 
-#issue04_img20 {
-  background-image: url("../images/issue04/NICOTINEPREVIEW18.jpg");
+#img30 {
+  background-image: url("images/editorial/mobile/editorial_21_030.jpg");
 }
 
-#issue04_img21 {
-  background-image: url("../images/issue04/NICOTINEPREVIEW19.jpg");
+#img31 {
+  background-image: url("images/editorial/mobile/editorial_21_031.jpg");
 }
 
-#issue04_img22 {
-  background-image: url("../images/issue04/NICOTINEPREVIEW20.jpg");
+#img32 {
+  background-image: url("images/editorial/mobile/editorial_21_032.jpg");
 }
 
-#issue04_img23 {
-  background-image: url("../images/issue04/NICOTINEPREVIEW21.jpg");
+#img33 {
+  background-image: url("images/editorial/mobile/editorial_21_033.jpg");
 }
 
-#issue04_img24 {
-  background-image: url("../images/issue04/NICOTINEPREVIEW22.jpg");
+#img34 {
+  background-image: url("images/editorial/mobile/editorial_21_034.jpg");
 }
 
-#issue04_img25 {
-  background-image: url("../images/issue04/NICOTINEPREVIEW23.jpg");
+#img35 {
+  background-image: url("images/editorial/mobile/editorial_21_035.jpg");
 }
 
-#issue04_img26 {
-  background-image: url("../images/issue04/NICOTINEPREVIEW24.jpg");
+#img36 {
+  background-image: url("images/editorial/mobile/editorial_21_036.jpg");
 }
 
-#issue04_img27 {
-  background-image: url("../images/issue04/NICOTINEPREVIEW25.jpg");
+#img37 {
+  background-image: url("images/editorial/mobile/editorial_21_037.jpg");
 }
 
-#issue04_img28 {
-  background-image: url("../images/issue04/NICOTINEPREVIEW26_BACK_COVER.jpg");
+#img38 {
+  background-image: url("images/editorial/mobile/editorial_21_038.jpg");
 }
-
-
-
-
-
 
-
-
-#issue05_img0 {
-  background-image: url("../images/issue05/frontcover01.jpg");
+#img39 {
+  background-image: url("images/editorial/mobile/editorial_21_039.jpg");
 }
 
-#issue05_img1 {
-  background-image: url("../images/issue05/frontcover02.jpg");
+#img40 {
+  background-image: url("images/editorial/mobile/editorial_21_040.jpg");
 }
 
-#issue05_img2 {
-  background-image: url("../images/issue05/frontcover03.jpg");
+#img41 {
+  background-image: url("images/editorial/mobile/editorial_21_041.jpg");
 }
 
-#issue05_img3 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW01.jpg");
+#img42 {
+  background-image: url("images/editorial/mobile/editorial_21_042.jpg");
 }
 
-#issue05_img4 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW02.jpg");
+#img43 {
+  background-image: url("images/editorial/mobile/editorial_21_043.jpg");
 }
 
-#issue05_img5 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW03.jpg");
+#img44 {
+  background-image: url("images/editorial/mobile/editorial_21_044.jpg");
 }
 
-#issue05_img6 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW04.jpg");
+#img45 {
+  background-image: url("images/editorial/mobile/editorial_21_045.jpg");
 }
 
-#issue05_img7 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW05.jpg");
+#img46 {
+  background-image: url("images/editorial/mobile/editorial_21_046.jpg");
 }
 
-#issue05_img8 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW06.jpg");
+#img47 {
+  background-image: url("images/editorial/mobile/editorial_21_047.jpg");
 }
 
-#issue05_img9 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW07.jpg");
-}
+/* #img48 {
+  background-image: url("images/editorial/mobile/editorial_21_048.jpg");
+} */
 
-#issue05_img10 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW08.jpg");
+#img49 {
+  background-image: url("images/editorial/mobile/editorial_21_049.jpg");
 }
 
-#issue05_img11 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW09.jpg");
+#img50 {
+  background-image: url("images/editorial/mobile/editorial_21_050.jpg");
 }
 
-#issue05_img12 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW10.jpg");
+#img51 {
+  background-image: url("images/editorial/mobile/editorial_21_051.jpg");
 }
 
-#issue05_img13 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW11.jpg");
+#img52 {
+  background-image: url("images/editorial/mobile/editorial_21_052.jpg");
 }
 
-#issue05_img14 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW12.jpg");
+#img53 {
+  background-image: url("images/editorial/mobile/editorial_21_053.jpg");
 }
 
-#issue05_img15 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW13.jpg");
+#img54 {
+  background-image: url("images/editorial/mobile/editorial_21_054.jpg");
 }
 
-#issue05_img16 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW14.jpg");
+#img55 {
+  background-image: url("images/editorial/mobile/editorial_21_055.jpg");
 }
 
-#issue05_img17 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW15.jpg");
+#img56 {
+  background-image: url("images/editorial/mobile/editorial_21_056.jpg");
 }
 
-#issue05_img18 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW16.jpg");
+#img57 {
+  background-image: url("images/editorial/mobile/editorial_21_057.jpg");
 }
 
-#issue05_img19 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW17.jpg");
+#img58 {
+  background-image: url("images/editorial/mobile/editorial_21_058.jpg");
 }
 
-#issue05_img20 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW18.jpg");
+#img59 {
+  background-image: url("images/editorial/mobile/editorial_21_059.jpg");
 }
 
-#issue05_img21 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW19.jpg");
+#img60 {
+  background-image: url("images/editorial/mobile/editorial_21_060.jpg");
 }
 
-#issue05_img22 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW20.jpg");
+#img61 {
+  background-image: url("images/editorial/mobile/editorial_21_061.jpg");
 }
 
-#issue05_img23 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW21.jpg");
+#img62 {
+  background-image: url("images/editorial/mobile/editorial_21_062.jpg");
 }
 
-#issue05_img24 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW22.jpg");
+#img63 {
+  background-image: url("images/editorial/mobile/editorial_21_063.jpg");
 }
 
-#issue05_img25 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW23.jpg");
+#img64 {
+  background-image: url("images/editorial/mobile/editorial_21_064.jpg");
 }
 
-#issue05_img26 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW24.jpg");
-}
+/* #img65 {
+  background-image: url("images/editorial/mobile/editorial_21_065.jpg");
+} */
 
-#issue05_img27 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW25.jpg");
+#img66 {
+  background-image: url("images/editorial/mobile/editorial_21_066.jpg");
 }
 
-#issue05_img28 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW26.jpg");
+#img67 {
+  background-image: url("images/editorial/mobile/editorial_21_067.jpg");
 }
 
-#issue05_img29 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW27.jpg");
+#img68 {
+  background-image: url("images/editorial/mobile/editorial_21_068.jpg");
 }
 
-#issue05_img30 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW28.jpg");
+#img69 {
+  background-image: url("images/editorial/mobile/editorial_21_069.jpg");
 }
 
-#issue05_img31 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW29.jpg");
-}
+/* #img70 {
+  background-image: url("images/editorial/mobile/editorial_21_070.jpg");
+} */
 
-#issue05_img32 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW30.jpg");
+#img71 {
+  background-image: url("images/editorial/mobile/editorial_21_071.jpg");
 }
 
-#issue05_img33 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW31.jpg");
+#img72 {
+  background-image: url("images/editorial/mobile/editorial_21_072.jpg");
 }
 
-#issue05_img34 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW32.jpg");
+#img73 {
+  background-image: url("images/editorial/mobile/editorial_21_073.jpg");
 }
 
-#issue05_img35 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW33.jpg");
+#img74 {
+  background-image: url("images/editorial/mobile/editorial_21_074.jpg");
 }
 
-#issue05_img36 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW34.jpg");
+#img75 {
+  background-image: url("images/editorial/mobile/editorial_21_075.jpg");
 }
 
-#issue05_img37 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW35.jpg");
+#img76 {
+  background-image: url("images/editorial/mobile/editorial_21_076.jpg");
 }
 
-#issue05_img38 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW36.jpg");
-}
+/* #img77 {
+  background-image: url("images/editorial/mobile/editorial_21_077.jpg");
+} */
 
-#issue05_img39 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW37.jpg");
+#img78 {
+  background-image: url("images/editorial/mobile/editorial_21_078.jpg");
 }
 
-#issue05_img40 {
-  background-image: url("../images/issue05/NICOTINE5PREVIEW38.jpg");
+#img79 {
+  background-image: url("images/editorial/mobile/editorial_21_079.jpg");
 }
 
-input[type="submit" i] {
-  background-color: white;
-  border: none;
+#img80 {
+  background-image: url("images/editorial/mobile/editorial_21_080.jpg");
 }
 
-
-#issue06_img0 {
-  background-image: url("../images/issue06/frontcover01.jpg");
-}
+/* #img81 {
+  background-image: url("images/editorial/mobile/editorial_21_081.jpg");
+} */
 
-#issue06_img1 {
-  background-image: url("../images/issue06/frontcover02.jpg");
+#img82 {
+  background-image: url("images/editorial/mobile/editorial_21_082.jpg");
 }
 
-#issue06_img2 {
-  background-image: url("../images/issue06/frontcover03.jpg");
+#img83 {
+  background-image: url("images/editorial/mobile/editorial_21_083.jpg");
 }
 
-#issue06_img3 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW01.jpg");
+#img84 {
+  background-image: url("images/editorial/mobile/editorial_21_084.jpg");
 }
 
-#issue06_img4 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW02.jpg");
+#img85 {
+  background-image: url("images/editorial/mobile/editorial_21_085.jpg");
 }
 
-#issue06_img5 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW03.jpg");
+#img86 {
+  background-image: url("images/editorial/mobile/editorial_21_086.jpg");
 }
 
-#issue06_img6 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW04.jpg");
+#img87 {
+  background-image: url("images/editorial/mobile/editorial_21_087.jpg");
 }
 
-#issue06_img7 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW05.jpg");
+#img88 {
+  background-image: url("images/editorial/mobile/editorial_21_088.jpg");
 }
 
-#issue06_img8 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW06.jpg");
+#img89 {
+  background-image: url("images/editorial/mobile/editorial_21_089.jpg");
 }
 
-#issue06_img9 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW07.jpg");
+#img90 {
+  background-image: url("images/editorial/mobile/editorial_21_090.jpg");
 }
 
-#issue06_img10 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW08.jpg");
+#img91 {
+  background-image: url("images/editorial/mobile/editorial_21_091.jpg");
 }
 
-#issue06_img11 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW09.jpg");
+#img92 {
+  background-image: url("images/editorial/mobile/editorial_21_092.jpg");
 }
 
-#issue06_img12 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW10.jpg");
+#img93 {
+  background-image: url("images/editorial/mobile/editorial_21_093.jpg");
 }
 
-#issue06_img13 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW11.jpg");
+#img94 {
+  background-image: url("images/editorial/mobile/editorial_21_094.jpg");
 }
 
-#issue06_img14 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW12.jpg");
 }
 
-#issue06_img15 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW13.jpg");
+/* iphone 5 Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+.main {
+    padding-left: 0.5%;
 }
 
-#issue06_img16 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW14.jpg");
+.slider {
+  margin-top: 300px;
 }
 
-#issue06_img17 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW15.jpg");
+.nav-top {
+  font-size: 23px;
 }
 
-#issue06_img18 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW16.jpg");
+.nav-top ul {
+    padding-left: 48%;
 }
 
-#issue06_img19 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW17.jpg");
+.nav-top ul li {
+    display: initial;
 }
 
-#issue06_img20 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW18.jpg");
+span {
+  padding-left: 3%;
 }
 
-#issue06_img21 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW19.jpg");
+#contact {
+  font-size: 20px;
 }
 
-#issue06_img22 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW20.jpg");
+span a.number {
+  padding-left: 3%;
 }
 
-#issue06_img23 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW21.jpg");
+.logo {
+  font-size: 50px;
 }
 
-#issue06_img24 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW22.jpg");
+.align-bottom {
+    left: 4%;
 }
 
-#issue06_img25 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW23.jpg");
+.video.slider {
+  width: 900px;
 }
 
-#issue06_img26 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW24.jpg");
+iframe {
+  padding-top: 50px;
+  width: 900px;
 }
 
-#issue06_img27 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW25.jpg");
-}
+_::-webkit-:host:not(:root:root), .slider { margin-top: 40px; }
 
-#issue06_img28 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW26.jpg");
-}
 
-#issue06_img29 {
-  background-image: url("../images/issue06/NICOTINE06PREVIEW27.jpg");
-}
+  .full-width {
+    padding-left: 31px;
+  }
 
+  .full-width-xl {
+    padding-left: 20px;
+  }
 
-#issue07_img0 {
-  background-image: url("../images/issue07/frontcover01.jpg");
-}
 
-#issue07_img1 {
-  background-image: url("../images/issue07/frontcover02.jpg");
 }
 
-#issue07_img2 {
-  background-image: url("../images/issue07/frontcover03.jpg");
+/* iphone 5 Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+.main {
+    padding-left: 0.5%;
 }
 
-#issue07_img3 {
-  background-image: url("../images/issue07/current01.jpg");
+.slider {
+  width: 820px;
 }
 
-#issue07_img4 {
-  background-image: url("../images/issue07/current02.jpg");
+.nav-top ul {
+    padding-left: 49.8%;
 }
 
-#issue07_img5 {
-  background-image: url("../images/issue07/current03.jpg");
+.align-bottom {
+    left: 1%;
 }
 
-#issue07_img6 {
-  background-image: url("../images/issue07/current04.jpg");
+iframe {
+    width: 750px;
+    height: 422px;
 }
 
-#issue07_img7 {
-  background-image: url("../images/issue07/current05.jpg");
-}
+  .white-left {
+    height: 400px;
+    margin-right: 20px;
+  }
+  .white-right {
+    height: 400px;
+  }
+  .image-left {
+    height: 400px;
+    margin-right: 20px;
+  }
+  .image-right {
+    height: 400px;
+  }
+  .image-left-711 {
+    height: 400px;
+  }
+  .image-right-711 {
+    height: 400px;
+  }
+  .full-width {
+    height: 400px;
+  }
+  .full-width-xl {
+    height: 400px;
+  }
 
-#issue07_img8 {
-  background-image: url("../images/issue07/current06.jpg");
+#img0_personal {
+    background-image: url("images/personal/mobile/personalorder_001.jpg");
+  height: 400px;
+  margin-right: 20px;
 }
 
-#issue07_img9 {
-  background-image: url("../images/issue07/current07.jpg");
+#img1_personal {
+    background-image: url("images/personal/mobile/personalorder_002.jpg");
+  height: 400px;
 }
 
-#issue07_img10 {
-  background-image: url("../images/issue07/current08.jpg");
+#img2_personal {
+    background-image: url("images/personal/mobile/personalorder_003.jpg");
+  height: 400px;
+  margin-right: 20px;
 }
 
-#issue07_img11 {
-  background-image: url("../images/issue07/current09.jpg");
+#img3_personal {
+    background-image: url("images/personal/mobile/personalorder_004.jpg");
+  height: 400px;
 }
 
-#issue07_img12 {
-  background-image: url("../images/issue07/current10.jpg");
+#img4_personal {
+    background-image: url("images/personal/mobile/personalorder_005.jpg");
+  height: 400px;
+  margin-right: 20px;
 }
 
-#issue07_img13 {
-  background-image: url("../images/issue07/current11.jpg");
+#img5_personal {
+    background-image: url("images/personal/mobile/personalorder_006.jpg");
+  height: 400px;
 }
 
-#issue07_img14 {
-  background-image: url("../images/issue07/current12.jpg");
+#img6_personal {
+    background-image: url("images/personal/mobile/personalorder_007.jpg");
+  height: 400px;
+  margin-right: 20px;
 }
 
-#issue07_img15 {
-  background-image: url("../images/issue07/current13.jpg");
+#img7_personal {
+    background-image: url("images/personal/mobile/personalorder_008.jpg");
+  height: 400px;
 }
 
-#issue07_img16 {
-  background-image: url("../images/issue07/current14.jpg");
+#img8_personal {
+    background-image: url("images/personal/mobile/personalorder_009.jpg");
+  height: 400px;
+  margin-right: 20px;
 }
 
-#issue07_img17 {
-  background-image: url("../images/issue07/current15.jpg");
+#img9_personal {
+    background-image: url("images/personal/mobile/personalorder_010.jpg");
+  height: 400px;
 }
 
-#issue07_img18 {
-  background-image: url("../images/issue07/current16.jpg");
+#img10_personal {
+    background-image: url("images/personal/mobile/personalorder_011.jpg");
+  height: 400px;
+  margin-right: 20px;
 }
 
-#issue07_img19 {
-  background-image: url("../images/issue07/current17.jpg");
+#img11_personal {
+    background-image: url("images/personal/mobile/personalorder_012.jpg");
+  height: 400px;
 }
 
-#issue07_img20 {
-  background-image: url("../images/issue07/current18.jpg");
+#img12_personal {
+    background-image: url("images/personal/mobile/personalorder_013.jpg");
+  height: 400px;
+  margin-right: 20px;
 }
 
-#issue07_img21 {
-  background-image: url("../images/issue07/current19.jpg");
+#img13_personal {
+    background-image: url("images/personal/mobile/personalorder_014.jpg");
+  height: 400px;
 }
 
-#issue07_img22 {
-  background-image: url("../images/issue07/current20.jpg");
+#img14_personal {
+    background-image: url("images/personal/mobile/personalorder_015.jpg");
+  height: 400px;
+  margin-right: 20px;
 }
 
-#issue07_img23 {
-  background-image: url("../images/issue07/current21.jpg");
+#img15_personal {
+    background-image: url("images/personal/mobile/personalorder_016.jpg");
+  height: 400px;
 }
 
-#issue07_img24 {
-  background-image: url("../images/issue07/current22.jpg");
+#img16_personal {
+  background-image: url("images/personal/mobile/personalorder_017.jpg");
+  height: 400px;
+  margin-right: 20px;
 }
 
-#issue07_img25 {
-  background-image: url("../images/issue07/current23.jpg");
+#img17_personal {
+    background-image: url("images/personal/mobile/personalorder_018.jpg");
+  height: 400px;
 }
 
-#issue07_img26 {
-  background-image: url("../images/issue07/current24.jpg");
+#img18_personal {
+    background-image: url("images/personal/mobile/personalorder_019.jpg");
+  height: 400px;
+  margin-right: 20px;
 }
 
-#issue07_img27 {
-  background-image: url("../images/issue07/current25.jpg");
+#img19_personal {
+    background-image: url("images/personal/mobile/personalorder_020.jpg");
+  height: 400px;
 }
 
-#issue07_img28 {
-  background-image: url("../images/issue07/current26.jpg");
+#img20_personal {
+    background-image: url("images/personal/mobile/personalorder_021.jpg");
+  height: 400px;
+  margin-right: 20px;
 }
 
-#issue07_img29 {
-  background-image: url("../images/issue07/current27.jpg");
+#img21_personal {
+    background-image: url("images/personal/mobile/personalorder_022.jpg");
+  height: 400px;
 }
 
-#issue07_img30 {
-  background-image: url("../images/issue07/current28.jpg");
+#img22_personal {
+    background-image: url("images/personal/mobile/personalorder_023.jpg");
+  height: 400px;
+  margin-right: 20px;
 }
 
-#issue07_img31 {
-  background-image: url("../images/issue07/current29.jpg");
+#img23_personal {
+    background-image: url("images/personal/mobile/personalorder_024.jpg");
+  height: 400px;
 }
 
-#issue07_img32 {
-  background-image: url("../images/issue07/current30.jpg");
+#img24_personal {
+    background-image: url("images/personal/mobile/personalorder_025.jpg");
+  height: 400px;
+  margin-right: 20px;
 }
 
-#issue07_img33 {
-  background-image: url("../images/issue07/current31.jpg");
+#img25_personal {
+    background-image: url("images/personal/mobile/personalorder_026.jpg");
+  height: 400px;
 }
 
-#issue07_img34 {
-  background-image: url("../images/issue07/current32.jpg");
+#img26_personal {
+    background-image: url("images/personal/mobile/personalorder_027.jpg");
+  height: 400px;
+  margin-right: 20px;
 }
 
-#issue07_img35 {
-  background-image: url("../images/issue07/current33.jpg");
+#img27_personal {
+    background-image: url("images/personal/mobile/personalorder_028.jpg");
+  height: 400px;
 }
 
-#issue07_img36 {
-  background-image: url("../images/issue07/backcover.jpg");
+#img28_personal {
+    background-image: url("images/personal/mobile/personalorder_029.jpg");
+  height: 400px;
+  margin-right: 20px;
 }
 
-
-.issue-cost {
-  padding: 2px 14px;
-  margin: 0;
+#img29_personal {
+    background-image: url("images/personal/mobile/personalorder_030.jpg");
+  height: 400px;
 }
-
-/*/////////////   MEDIA QUERIES  ////////////////*/
-
-
-
-/* small browsers */
-@media only screen and (min-width: 568px) and (max-width: 653px) and (-webkit-min-device-pixel-ratio: 1) {
-  body {
-    width: 95%;
-  }
-
-   .story {
-    width: 95%;
-  }
-
-  #homepage {
-    display: none;
-  }
-
-  div#navbar-ipad {
-  display: block;
-   margin-top: 5%;
-  }
-
-  ul li#logo {
-    display: none;
-  }
-
-  ul li#logo-ipad {
-    display: block;
-    font-size: 2em;
-    letter-spacing: -1.4px; 
-    margin-top: 3%;
-  }
-
-  .slider {
-    margin-top: 2em;
-  }
-
-  section#about {
-    margin-top: 10%;
-    width: 65%;
-    font-size: 83%;
-  }
 
-  div#description {
-    font-size: 83%;
-  }
-
-  
-
+#img30_personal {
+    background-image: url("images/personal/mobile/personalorder_031.jpg");
+  height: 400px;
+  margin-right: 20px;
 }
-
-
-
-
- /* ----------- smaller WIDTH browsers ----------- */
-@media only screen and (min-width: 320px) and (max-width: 568px)and (-webkit-min-device-pixel-ratio: 2) {
-    body {
-    width: 95%;
-  }
-
-   .story {
-    width: 95%;
-    top: 110%;
-  }
-
-  #homepage {
-    display: none;
-  }
-
-
-div#navbar-ipad {
-  display: block;
-  margin-top: 5%;
-  }
-
-  ul {
-    -webkit-margin-before: .5em;
-    -webkit-margin-after: .5em;
-  }
-
-  ul li#logo {
-    display: none;
-  }
-
-  ul li#logo-ipad {
-    display: block;
-    font-size: 1.7em;
-    letter-spacing: -1.4px; 
-    margin-top: 3%;
-  }
 
-  .nav {
-    font-size: 80%;
-  }
-
-  .slider {
-    margin-top: 8%;
-  }
-
-  span#hide_for_mobile {
-    display: none;
-  }
-
-  *::-webkit-media-controls-start-playback-button {
-  display: none!important;
-  -webkit-appearance: none;
-  opacity: 0;
-  } 
-
-  _::-webkit-:host:not(:root:root), .cost { margin-top: -20px; }
-
-  section#buy {
-   bottom: -20px;
+#img31_personal {
+    background-image: url("images/personal/mobile/personalorder_032.jpg");
+  height: 400px;
 }
-
-  section#about {
-    width: 65%;
-    font-size: 83%;
-    margin-top: 3%;
-  }
-
-  div#description {
-    font-size: 83%;
-    margin-bottom: 1%;
-  }
-
-  section#about p {
-     -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
-  }
-
-  section#current {
-    margin-top: 8%;
-  }
-
-  section#stockists {
-    margin-top: 8%;
-    font-size: 57%;
-    
-  }
-
-
-
-  .slider-image {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img0 {
-  background-position: center top;
-  height: 20em;
-  }
-
-  #issue02_img0 {
-  background-position: center top;
-  height: 20em;
-  }
-
-  #issue03_img0 {
-  background-position: center top;
-  height: 20em;
-  }
-
-  #issue04_img0 {
-  background-position: center top;
-  height: 20em;
-  }
-
-   #issue05_img0 {
-  background-position: center top;
-  height: 20em;
-  }
 
-  #issue06_img0 {
-    background-position: center top;
-    height: 20em;
-  }
-
-  #issue07_img0 {
-    background-position: center top;
-    height: 20em;
-  }
-
-
-  .shop {
-    display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 3em;
-  }
-
-
- /* #shop-left {
-      left: 0; 
-  }*/
-  .shop-vertical-center, .shop-archive {
-      position: relative;
-      top: 50%;
-      left: 0; 
-      transform: translate(0%);
-  }
-
-  .margin-top {
-      margin-top: 3em;
-  }
+#img32_personal {
+    background-image: url("images/personal/mobile/personalorder_033.jpg");
+  height: 400px;
+  margin-right: 20px;
 }
 
-@media only screen and (min-width: 520px) and (max-width: 568px)and (-webkit-min-device-pixel-ratio: 2) {
-  .story {
-    top: 115%;
-  }
+#img33_personal {
+    background-image: url("images/personal/mobile/personalorder_034.jpg");
+  height: 400px;
 }
-
-
-
-
-
-@media only screen and (min-width: 569px) and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 1) {
-   body {
-    width: 95%;
-  }
-
-   .story {
-    top: 118%;
-    width: 95%;
-  }
-
-   section#stockists {
-    margin-top: 10%;
-    font-size: 70%;
-  }
-
-  .shop {
-    width: 100%;
-    left: 0;
-    flex-direction: row;
-  }
-
-  .shop-vertical-center, .shop-archive {
-      position: relative;
-      top: 50%;
-      left: 0; 
-      transform: translate(0%);
-  }
-
-  .margin-top {
-      margin-top: 3em;
-  }
-
-  .shop-image {
-    width: 58em;
-  }
-
-  }
-
-  @media only screen and (min-width: 801px) and (max-width: 899px) and (-webkit-min-device-pixel-ratio: 1) {
-   body {
-    width: 95%;
-  }
-
-   .story {
-    top: 120%;
-    width: 95%;
-  }
-
-  section#stockists {
-    margin-top: 10%;
-    font-size: 70%;
-  }
-
-    .shop {
-    width: 100%;
-    left: 0;
-  }
-
- div.banner img.celine {
-    margin-top: 4em;
-  }
-
 
-
+#img34_personal {
+    background-image: url("images/personal/mobile/personalorder_035.jpg");
+  height: 400px;
+  margin-right: 20px;
 }
 
-@media only screen and (min-width: 568px) and (max-width: 801px) and (-webkit-min-device-pixel-ratio: 1) {
-div.banner img.celine {
-    margin-top: 3em;
-  }
+#img35_personal {
+    background-image: url("images/personal/mobile/personalorder_036.jpg");
+  height: 400px;
 }
-
-@media only screen and (min-width: 900px) and (max-width: 1150px)and (-webkit-min-device-pixel-ratio: 2) {
-  body {
-    width: 65%;
-  }
-
-   .story {
-    top: 103%;
-    width: 65%;
-  }
-
-  div#info {
-    margin-top: 10em;
-  }
-
-  div#info.story2 {
-    margin-top: 4em;
-    margin-bottom: 4em;
-  }
 
-  div.banner img.celine {
-    margin-top: 10em;
-  }
-
-   section#stockists {
-    margin-top: 12%;
-  }
-
-  .bottom-align {
-    left: 0;
-  }
-
-  .shop {
-    width: 100%;
-    left: 0;
-  }
-
+#img36_personal {
+    background-image: url("images/personal/mobile/personalorder_037.jpg");
+  height: 400px;
+  margin-right: 20px;
 }
 
-@media only screen and (min-width: 1151px) and (max-width: 1250px)and (-webkit-min-device-pixel-ratio: 1) {
-  .story {
-    top: 117%;
-  }
+#img37_personal {
+    background-image: url("images/personal/mobile/personalorder_038.jpg");
+  height: 400px;
 }
-
-/* ----------smaller HEIGHT browsers -------- */
-@media only screen and (min-height: 500px) and (max-height: 690px) and (-webkit-min-device-pixel-ratio: 1) {
-  section#stockists {
-    margin-top: 8%;
-    font-size: 70%;
-     padding-top: 0%;
-  }
 
-.slider-image{
-  height: 28em;
+#img38_personal {
+    background-image: url("images/personal/mobile/personalorder_039.jpg");
+  height: 400px;
+  margin-right: 20px;
 }
 
-
-
+#img39_personal {
+    background-image: url("images/personal/mobile/personalorder_040.jpg");
+  height: 400px;
 }
 
-/* X-LARGE SCREENS*/
-@media screen and (min-device-width: 1550px) and (-webkit-min-device-pixel-ratio: 1) {
-  section#stockists {
-     padding-top: 0%;
-  }
-
+#img40_personal {
+    background-image: url("images/personal/mobile/personalorder_041.jpg");
+  height: 400px;
+  margin-right: 20px;
 }
-
-
-
-
-
-  /* iphone Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px)and (-webkit-min-device-pixel-ratio: 2) {
-  body {
-    width: 95%;
-  }
-
-   .story {
-    width: 95%;
-    top: 110%;
-  }
-
-  #story_image_1 {
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    width: 100%;
-    display: block;
-  }
-
-  p.text {
-    clear: both;
-  }
-
-  div#navbar-ipad {
-  display: block;
-  }
-
-  div#navbar {
-    font-size: 80%;
-  }
-
-  ul {
-    -webkit-margin-before: .5em;
-    -webkit-margin-after: .5em;
-  }
-
-  ul li#logo {
-    display: none;
-  }
-
-  ul li#logo-ipad {
-    display: block;
-    font-size: 1.7em;
-    letter-spacing: -1.4px; 
-    margin-top: 3%;
-  }
-
-  .nav {
-    font-size: 105%;
-  }
-
-  .slider {
-    margin-top: 8%;
-  }
-
-  span#hide_for_mobile {
-    display: none;
-  }
 
-  *::-webkit-media-controls-start-playback-button {
-  display: none!important;
-  -webkit-appearance: none;
-  opacity: 0;
-  } 
-  video::-webkit-media-controls {
-    display:none !important;
-    opacity: 0;
+#img41_personal {
+    background-image: url("images/personal/mobile/personalorder_042.jpg");
+  height: 400px;
 }
 
-video::-webkit-media-controls-enclosure {
-  display:none !important;
+#img42_personal {
+    background-image: url("images/personal/mobile/personalorder_043.jpg");
+  height: 400px;
+  margin-right: 20px;
 }
-
-  _::-webkit-:host:not(:root:root), .cost { margin-top: -20px; }
 
-  section#buy {
-   bottom: -20px;
+#img43_personal {
+    background-image: url("images/personal/mobile/personalorder_044.jpg");
+  height: 400px;
 }
-
-  section#about {
-    width: 65%;
-    font-size: 83%;
-    margin-top: 3%;
-  }
-
-  div#description {
-    font-size: 83%;
-    margin-bottom: 1%;
-  }
-
-  section#about p {
-     -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
-  }
-
-  section#current {
-    margin-top: 8%;
-  }
-
-   section#stockists {
-     margin-top: 15%;
-    font-size: 60%;
-     padding-top: 0%;
-  }
-
-
-  .slider-image {
-  background-position: 50% 25%;
-  height: 20em;
-  }
-
-  #img0 {
-  background-position: center top;
-  height: 20em;
-  }
-
-  #issue02_img0 {
-  background-position: center top;
-  height: 20em;
-  }
-
-  #issue03_img0 {
-    background-position: center top;
-    height: 20em;
-  }
-  
-  #issue04_img0 {
-    background-position: center top;
-    height: 20em;
-  }
-
-  #issue05_img0 {
-    background-position: center top;
-    height: 20em;
-  }
-
-  #issue06_img0 {
-    background-position: center top;
-    height: 20em;
-  }
-
-  #issue07_img0 {
-    background-position: center top;
-    height: 20em;
-  }
-
-  .shop {
-    width: 100%;
-    position: static;
-  }
-
-  .banner img.celine{
-    margin-top: 0em;
-  }
-
-  
 
 }
 
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* ----------- iPhone 6 ----------- */
 
-/* Portrait and Landscape */
+/* iPhone 6 Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { 
-   body {
-    width: 95%;
-  }
-
-   .story {
-    width: 95%;
-    top: 110%;
-  }
-  
-  section#stockists {
-    margin-top: 15%;
-    font-size: 64%;
-    margin-bottom: 10%;
-     padding-top: 0%;
-  }
-
-    .shop {
-    width: 100%;
-    position: static;
-  }
-
-
-  #story_image_1 {
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    width: 100%;
-    display: block;
-  }
-
-  p.text {
-    clear: both;
-  }
-
-  *::-webkit-media-controls-start-playback-button {
-  display: none!important;
-  -webkit-appearance: none;
-  opacity: 0;
+  .slick-track
+{
+    left: -1px;
 }
-video::-webkit-media-controls {
-    display:none !important;
-    opacity: 0;
-}
-video::-webkit-media-controls-start-playback-button {
-  display: none !important;
+.main {
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
-video::-webkit-media-controls-enclosure {
-  display:none !important;
+#img1 {
+  background-image: url("images/editorial/mobile/editorial_21_001.jpg");
 }
 
-  .custom-video-controls {
-  z-index: 2147483647;
+#img2 {
+  background-image: url("images/editorial/mobile/editorial_21_002.jpg");
+}
+
+#img3 {
+  background-image: url("images/editorial/mobile/editorial_21_003.jpg");
+}
+
+#img4 {
+  background-image: url("images/editorial/mobile/editorial_21_004.jpg");
+}
+
+#img5 {
+  background-image: url("images/editorial/mobile/editorial_21_005.jpg");
+}
+
+#img6 {
+  background-image: url("images/editorial/mobile/editorial_21_006.jpg");
+}
+
+#img7 {
+  background-image: url("images/editorial/mobile/editorial_21_007.jpg");
+}
+
+#img8 {
+  background-image: url("images/editorial/mobile/editorial_21_008.jpg");
+}
+
+#img9 {
+  background-image: url("images/editorial/mobile/editorial_21_009.jpg");
+}
+
+#img10 {
+  background-image: url("images/editorial/mobile/editorial_21_010.jpg");
+}
+
+#img11 {
+  background-image: url("images/editorial/mobile/editorial_21_011.jpg");
+}
+
+#img12 {
+  background-image: url("images/editorial/mobile/editorial_21_012.jpg");
+}
+
+#img13 {
+  background-image: url("images/editorial/mobile/editorial_21_013.jpg");
+}
+
+#img14 {
+  background-image: url("images/editorial/mobile/editorial_21_014.jpg");
+}
+
+#img15 {
+  background-image: url("images/editorial/mobile/editorial_21_015.jpg");
+}
+
+#img16 {
+  background-image: url("images/editorial/mobile/editorial_21_016.jpg");
+}
+
+#img17 {
+  background-image: url("images/editorial/mobile/editorial_21_017.jpg");
+}
+
+#img18 {
+  background-image: url("images/editorial/mobile/editorial_21_018.jpg");
+}
+/* 
+#img19 {
+  background-image: url("images/editorial/mobile/editorial_21_019.jpg");
+} */
+
+#img20 {
+  background-image: url("images/editorial/mobile/editorial_21_020.jpg");
+}
+
+#img21 {
+  background-image: url("images/editorial/mobile/editorial_21_021.jpg");
+}
+
+#img22 {
+  background-image: url("images/editorial/mobile/editorial_21_022.jpg");
+}
+
+#img23 {
+  background-image: url("images/editorial/mobile/editorial_21_023.jpg");
+}
+
+#img24 {
+  background-image: url("images/editorial/mobile/editorial_21_024.jpg");
+}
+
+#img25 {
+  background-image: url("images/editorial/mobile/editorial_21_025.jpg");
+}
+
+/* #img26 {
+  background-image: url("images/editorial/mobile/editorial_21_026.jpg");
+} */
+
+#img27 {
+  background-image: url("images/editorial/mobile/editorial_21_027.jpg");
+}
+
+/* #img28 {
+  background-image: url("images/editorial/mobile/editorial_21_028.jpg");
+} */
+
+#img29 {
+  background-image: url("images/editorial/mobile/editorial_21_029.jpg");
+}
+
+#img30 {
+  background-image: url("images/editorial/mobile/editorial_21_030.jpg");
+}
+
+#img31 {
+  background-image: url("images/editorial/mobile/editorial_21_031.jpg");
+}
+
+#img32 {
+  background-image: url("images/editorial/mobile/editorial_21_032.jpg");
+}
+
+#img33 {
+  background-image: url("images/editorial/mobile/editorial_21_033.jpg");
+}
+
+#img34 {
+  background-image: url("images/editorial/mobile/editorial_21_034.jpg");
+}
+
+#img35 {
+  background-image: url("images/editorial/mobile/editorial_21_035.jpg");
+}
+
+#img36 {
+  background-image: url("images/editorial/mobile/editorial_21_036.jpg");
+}
+
+#img37 {
+  background-image: url("images/editorial/mobile/editorial_21_037.jpg");
+}
+
+#img38 {
+  background-image: url("images/editorial/mobile/editorial_21_038.jpg");
+}
+
+#img39 {
+  background-image: url("images/editorial/mobile/editorial_21_039.jpg");
+}
+
+#img40 {
+  background-image: url("images/editorial/mobile/editorial_21_040.jpg");
+}
+
+#img41 {
+  background-image: url("images/editorial/mobile/editorial_21_041.jpg");
+}
+
+#img42 {
+  background-image: url("images/editorial/mobile/editorial_21_042.jpg");
+}
+
+#img43 {
+  background-image: url("images/editorial/mobile/editorial_21_043.jpg");
+}
+
+#img44 {
+  background-image: url("images/editorial/mobile/editorial_21_044.jpg");
+}
+
+#img45 {
+  background-image: url("images/editorial/mobile/editorial_21_045.jpg");
+}
+
+#img46 {
+  background-image: url("images/editorial/mobile/editorial_21_046.jpg");
+}
+
+#img47 {
+  background-image: url("images/editorial/mobile/editorial_21_047.jpg");
+}
+
+/* #img48 {
+  background-image: url("images/editorial/mobile/editorial_21_048.jpg");
+} */
+
+#img49 {
+  background-image: url("images/editorial/mobile/editorial_21_049.jpg");
+}
+
+#img50 {
+  background-image: url("images/editorial/mobile/editorial_21_050.jpg");
+}
+
+#img51 {
+  background-image: url("images/editorial/mobile/editorial_21_051.jpg");
+}
+
+#img52 {
+  background-image: url("images/editorial/mobile/editorial_21_052.jpg");
+}
+
+#img53 {
+  background-image: url("images/editorial/mobile/editorial_21_053.jpg");
+}
+
+#img54 {
+  background-image: url("images/editorial/mobile/editorial_21_054.jpg");
+}
+
+#img55 {
+  background-image: url("images/editorial/mobile/editorial_21_055.jpg");
+}
+
+#img56 {
+  background-image: url("images/editorial/mobile/editorial_21_056.jpg");
+}
+
+#img57 {
+  background-image: url("images/editorial/mobile/editorial_21_057.jpg");
+}
+
+#img58 {
+  background-image: url("images/editorial/mobile/editorial_21_058.jpg");
+}
+
+#img59 {
+  background-image: url("images/editorial/mobile/editorial_21_059.jpg");
+}
+
+#img60 {
+  background-image: url("images/editorial/mobile/editorial_21_060.jpg");
+}
+
+#img61 {
+  background-image: url("images/editorial/mobile/editorial_21_061.jpg");
+}
+
+#img62 {
+  background-image: url("images/editorial/mobile/editorial_21_062.jpg");
+}
+
+#img63 {
+  background-image: url("images/editorial/mobile/editorial_21_063.jpg");
+}
+
+#img64 {
+  background-image: url("images/editorial/mobile/editorial_21_064.jpg");
+}
+
+/* #img65 {
+  background-image: url("images/editorial/mobile/editorial_21_065.jpg");
+} */
+
+#img66 {
+  background-image: url("images/editorial/mobile/editorial_21_066.jpg");
+}
+
+#img67 {
+  background-image: url("images/editorial/mobile/editorial_21_067.jpg");
+}
+
+#img68 {
+  background-image: url("images/editorial/mobile/editorial_21_068.jpg");
+}
+
+#img69 {
+  background-image: url("images/editorial/mobile/editorial_21_069.jpg");
+}
+
+/* #img70 {
+  background-image: url("images/editorial/mobile/editorial_21_070.jpg");
+} */
+
+#img71 {
+  background-image: url("images/editorial/mobile/editorial_21_071.jpg");
+}
+
+#img72 {
+  background-image: url("images/editorial/mobile/editorial_21_072.jpg");
+}
+
+#img73 {
+  background-image: url("images/editorial/mobile/editorial_21_073.jpg");
+}
+
+#img74 {
+  background-image: url("images/editorial/mobile/editorial_21_074.jpg");
+}
+
+#img75 {
+  background-image: url("images/editorial/mobile/editorial_21_075.jpg");
+}
+
+#img76 {
+  background-image: url("images/editorial/mobile/editorial_21_076.jpg");
+}
+
+/* #img77 {
+  background-image: url("images/editorial/mobile/editorial_21_077.jpg");
+} */
+
+#img78 {
+  background-image: url("images/editorial/mobile/editorial_21_078.jpg");
+}
+
+#img79 {
+  background-image: url("images/editorial/mobile/editorial_21_079.jpg");
+}
+
+#img80 {
+  background-image: url("images/editorial/mobile/editorial_21_080.jpg");
+}
+
+/* #img81 {
+  background-image: url("images/editorial/mobile/editorial_21_081.jpg");
+} */
+
+#img82 {
+  background-image: url("images/editorial/mobile/editorial_21_082.jpg");
+}
+
+#img83 {
+  background-image: url("images/editorial/mobile/editorial_21_083.jpg");
+}
+
+#img84 {
+  background-image: url("images/editorial/mobile/editorial_21_084.jpg");
+}
+
+#img85 {
+  background-image: url("images/editorial/mobile/editorial_21_085.jpg");
+}
+
+#img86 {
+  background-image: url("images/editorial/mobile/editorial_21_086.jpg");
+}
+
+#img87 {
+  background-image: url("images/editorial/mobile/editorial_21_087.jpg");
+}
+
+#img88 {
+  background-image: url("images/editorial/mobile/editorial_21_088.jpg");
+}
+
+#img89 {
+  background-image: url("images/editorial/mobile/editorial_21_089.jpg");
+}
+
+#img90 {
+  background-image: url("images/editorial/mobile/editorial_21_090.jpg");
+}
+
+#img91 {
+  background-image: url("images/editorial/mobile/editorial_21_091.jpg");
+}
+
+#img92 {
+  background-image: url("images/editorial/mobile/editorial_21_092.jpg");
+}
+
+#img93 {
+  background-image: url("images/editorial/mobile/editorial_21_093.jpg");
+}
+
+#img94 {
+  background-image: url("images/editorial/mobile/editorial_21_094.jpg");
+}
+
+}
+
+/* iPhone 6 Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) { 
+.main {
+    padding-left: 0.5%;
+}
+
+.slider {
+  margin-top: 300px;
+}
+
+.nav-top {
+  font-size: 23px;
+}
+
+.nav-top ul {
+    padding-left: 48%;
+}
+
+.nav-top ul li {
+    display: initial;
 }
 
 
+span {
+  padding-left: 3%;
 }
 
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+#contact {
+  font-size: 20px;
+}
 
-/* Portrait and Landscape */
+span a.number {
+  padding-left: 3%;
+}
+
+.logo {
+  font-size: 50px;
+}
+
+.align-bottom {
+    left: 4%;
+}
+
+.video.slider {
+  width: 900px;
+}
+
+iframe {
+
+    padding-top: 50px;
+  width: 900px;
+}
+
+.full-width {
+    padding-left: 31px;
+  }
+
+  .full-width-xl {
+    padding-left: 20px;
+  }
+
+_::-webkit-:host:not(:root:root), .slider { margin-top: 40px; }
+
+
+}
+
+/* iPhone 6 Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) { 
+.main {
+    padding-left: 0.5%;
+}
+
+.slider {
+  width: 820px;
+}
+
+.nav-top ul {
+    padding-left: 49.8%;
+}
+
+.align-bottom {
+    left: 1%;
+}
+
+iframe {
+    width: 750px;
+    height: 422px;
+}
+
+.white-left {
+    height: 400px;
+    margin-right: 20px;
+  }
+  .white-right {
+    height: 400px;
+  }
+  .image-left {
+    height: 400px;
+    margin-right: 20px;
+  }
+  .image-right {
+    height: 400px;
+  }
+  .image-left-711 {
+    height: 400px;
+  }
+  .image-right-711 {
+    height: 400px;
+  }
+  .full-width {
+    height: 400px;
+  }
+  .full-width-xl {
+    height: 400px;
+  }
+
+#img0_personal {
+    background-image: url("images/personal/mobile/personalorder_001.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img1_personal {
+    background-image: url("images/personal/mobile/personalorder_002.jpg");
+  height: 400px;
+}
+
+#img2_personal {
+    background-image: url("images/personal/mobile/personalorder_003.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img3_personal {
+    background-image: url("images/personal/mobile/personalorder_004.jpg");
+  height: 400px;
+}
+
+#img4_personal {
+    background-image: url("images/personal/mobile/personalorder_005.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img5_personal {
+    background-image: url("images/personal/mobile/personalorder_006.jpg");
+  height: 400px;
+}
+
+#img6_personal {
+    background-image: url("images/personal/mobile/personalorder_007.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img7_personal {
+    background-image: url("images/personal/mobile/personalorder_008.jpg");
+  height: 400px;
+}
+
+#img8_personal {
+    background-image: url("images/personal/mobile/personalorder_009.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img9_personal {
+    background-image: url("images/personal/mobile/personalorder_010.jpg");
+  height: 400px;
+}
+
+#img10_personal {
+    background-image: url("images/personal/mobile/personalorder_011.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img11_personal {
+    background-image: url("images/personal/mobile/personalorder_012.jpg");
+  height: 400px;
+}
+
+#img12_personal {
+    background-image: url("images/personal/mobile/personalorder_013.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img13_personal {
+    background-image: url("images/personal/mobile/personalorder_014.jpg");
+  height: 400px;
+}
+
+#img14_personal {
+    background-image: url("images/personal/mobile/personalorder_015.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img15_personal {
+    background-image: url("images/personal/mobile/personalorder_016.jpg");
+  height: 400px;
+}
+
+#img16_personal {
+  background-image: url("images/personal/mobile/personalorder_017.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img17_personal {
+    background-image: url("images/personal/mobile/personalorder_018.jpg");
+  height: 400px;
+}
+
+#img18_personal {
+    background-image: url("images/personal/mobile/personalorder_019.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img19_personal {
+    background-image: url("images/personal/mobile/personalorder_020.jpg");
+  height: 400px;
+}
+
+#img20_personal {
+    background-image: url("images/personal/mobile/personalorder_021.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img21_personal {
+    background-image: url("images/personal/mobile/personalorder_022.jpg");
+  height: 400px;
+}
+
+#img22_personal {
+    background-image: url("images/personal/mobile/personalorder_023.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img23_personal {
+    background-image: url("images/personal/mobile/personalorder_024.jpg");
+  height: 400px;
+}
+
+#img24_personal {
+    background-image: url("images/personal/mobile/personalorder_025.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img25_personal {
+    background-image: url("images/personal/mobile/personalorder_026.jpg");
+  height: 400px;
+}
+
+#img26_personal {
+    background-image: url("images/personal/mobile/personalorder_027.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img27_personal {
+    background-image: url("images/personal/mobile/personalorder_028.jpg");
+  height: 400px;
+}
+
+#img28_personal {
+    background-image: url("images/personal/mobile/personalorder_029.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img29_personal {
+    background-image: url("images/personal/mobile/personalorder_030.jpg");
+  height: 400px;
+}
+
+#img30_personal {
+    background-image: url("images/personal/mobile/personalorder_031.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img31_personal {
+    background-image: url("images/personal/mobile/personalorder_032.jpg");
+  height: 400px;
+}
+
+#img32_personal {
+    background-image: url("images/personal/mobile/personalorder_033.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img33_personal {
+    background-image: url("images/personal/mobile/personalorder_034.jpg");
+  height: 400px;
+}
+
+#img34_personal {
+    background-image: url("images/personal/mobile/personalorder_035.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img35_personal {
+    background-image: url("images/personal/mobile/personalorder_036.jpg");
+  height: 400px;
+}
+
+#img36_personal {
+    background-image: url("images/personal/mobile/personalorder_037.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img37_personal {
+    background-image: url("images/personal/mobile/personalorder_038.jpg");
+  height: 400px;
+}
+
+#img38_personal {
+    background-image: url("images/personal/mobile/personalorder_039.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img39_personal {
+    background-image: url("images/personal/mobile/personalorder_040.jpg");
+  height: 400px;
+}
+
+#img40_personal {
+    background-image: url("images/personal/mobile/personalorder_041.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img41_personal {
+    background-image: url("images/personal/mobile/personalorder_042.jpg");
+  height: 400px;
+}
+
+#img42_personal {
+    background-image: url("images/personal/mobile/personalorder_043.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img43_personal {
+    background-image: url("images/personal/mobile/personalorder_044.jpg");
+  height: 400px;
+}
+
+}
+
+
+/* ----------- iPhone 6+ ----------- */
+
+/* iPhone 6+ Portrait and Landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) { 
-  .story {
-    top: 105%;
-  }
+  .slick-track
+{
+    left: -1px;
+}
+.main {
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
-/* ----------- iPhone X ----------- */
-
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) { 
-  .story {
-    top: 100%;
-  }
+#img1 {
+  background-image: url("images/editorial/mobile/editorial_21_001.jpg");
 }
 
-@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) { 
-    .story {
-    top: 100%;
-  }
+#img2 {
+  background-image: url("images/editorial/mobile/editorial_21_002.jpg");
 }
 
-/* ----------- iPad 1 and 2 ----------- */
-/* iPad 1 and 2 Portrait and Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-   body {
-    width: 80%;
-   }
-    
-  .story {
-    width: 80%;
-    top: 110%;
+#img3 {
+  background-image: url("images/editorial/mobile/editorial_21_003.jpg");
+}
+
+#img4 {
+  background-image: url("images/editorial/mobile/editorial_21_004.jpg");
+}
+
+#img5 {
+  background-image: url("images/editorial/mobile/editorial_21_005.jpg");
+}
+
+#img6 {
+  background-image: url("images/editorial/mobile/editorial_21_006.jpg");
+}
+
+#img7 {
+  background-image: url("images/editorial/mobile/editorial_21_007.jpg");
+}
+
+#img8 {
+  background-image: url("images/editorial/mobile/editorial_21_008.jpg");
+}
+
+#img9 {
+  background-image: url("images/editorial/mobile/editorial_21_009.jpg");
+}
+
+#img10 {
+  background-image: url("images/editorial/mobile/editorial_21_010.jpg");
+}
+
+#img11 {
+  background-image: url("images/editorial/mobile/editorial_21_011.jpg");
+}
+
+#img12 {
+  background-image: url("images/editorial/mobile/editorial_21_012.jpg");
+}
+
+#img13 {
+  background-image: url("images/editorial/mobile/editorial_21_013.jpg");
+}
+
+#img14 {
+  background-image: url("images/editorial/mobile/editorial_21_014.jpg");
+}
+
+#img15 {
+  background-image: url("images/editorial/mobile/editorial_21_015.jpg");
+}
+
+#img16 {
+  background-image: url("images/editorial/mobile/editorial_21_016.jpg");
+}
+
+#img17 {
+  background-image: url("images/editorial/mobile/editorial_21_017.jpg");
+}
+
+#img18 {
+  background-image: url("images/editorial/mobile/editorial_21_018.jpg");
+}
+/* 
+#img19 {
+  background-image: url("images/editorial/mobile/editorial_21_019.jpg");
+} */
+
+#img20 {
+  background-image: url("images/editorial/mobile/editorial_21_020.jpg");
+}
+
+#img21 {
+  background-image: url("images/editorial/mobile/editorial_21_021.jpg");
+}
+
+#img22 {
+  background-image: url("images/editorial/mobile/editorial_21_022.jpg");
+}
+
+#img23 {
+  background-image: url("images/editorial/mobile/editorial_21_023.jpg");
+}
+
+#img24 {
+  background-image: url("images/editorial/mobile/editorial_21_024.jpg");
+}
+
+#img25 {
+  background-image: url("images/editorial/mobile/editorial_21_025.jpg");
+}
+
+/* #img26 {
+  background-image: url("images/editorial/mobile/editorial_21_026.jpg");
+} */
+
+#img27 {
+  background-image: url("images/editorial/mobile/editorial_21_027.jpg");
+}
+
+/* #img28 {
+  background-image: url("images/editorial/mobile/editorial_21_028.jpg");
+} */
+
+#img29 {
+  background-image: url("images/editorial/mobile/editorial_21_029.jpg");
+}
+
+#img30 {
+  background-image: url("images/editorial/mobile/editorial_21_030.jpg");
+}
+
+#img31 {
+  background-image: url("images/editorial/mobile/editorial_21_031.jpg");
+}
+
+#img32 {
+  background-image: url("images/editorial/mobile/editorial_21_032.jpg");
+}
+
+#img33 {
+  background-image: url("images/editorial/mobile/editorial_21_033.jpg");
+}
+
+#img34 {
+  background-image: url("images/editorial/mobile/editorial_21_034.jpg");
+}
+
+#img35 {
+  background-image: url("images/editorial/mobile/editorial_21_035.jpg");
+}
+
+#img36 {
+  background-image: url("images/editorial/mobile/editorial_21_036.jpg");
+}
+
+#img37 {
+  background-image: url("images/editorial/mobile/editorial_21_037.jpg");
+}
+
+#img38 {
+  background-image: url("images/editorial/mobile/editorial_21_038.jpg");
+}
+
+#img39 {
+  background-image: url("images/editorial/mobile/editorial_21_039.jpg");
+}
+
+#img40 {
+  background-image: url("images/editorial/mobile/editorial_21_040.jpg");
+}
+
+#img41 {
+  background-image: url("images/editorial/mobile/editorial_21_041.jpg");
+}
+
+#img42 {
+  background-image: url("images/editorial/mobile/editorial_21_042.jpg");
+}
+
+#img43 {
+  background-image: url("images/editorial/mobile/editorial_21_043.jpg");
+}
+
+#img44 {
+  background-image: url("images/editorial/mobile/editorial_21_044.jpg");
+}
+
+#img45 {
+  background-image: url("images/editorial/mobile/editorial_21_045.jpg");
+}
+
+#img46 {
+  background-image: url("images/editorial/mobile/editorial_21_046.jpg");
+}
+
+#img47 {
+  background-image: url("images/editorial/mobile/editorial_21_047.jpg");
+}
+
+/* #img48 {
+  background-image: url("images/editorial/mobile/editorial_21_048.jpg");
+} */
+
+#img49 {
+  background-image: url("images/editorial/mobile/editorial_21_049.jpg");
+}
+
+#img50 {
+  background-image: url("images/editorial/mobile/editorial_21_050.jpg");
+}
+
+#img51 {
+  background-image: url("images/editorial/mobile/editorial_21_051.jpg");
+}
+
+#img52 {
+  background-image: url("images/editorial/mobile/editorial_21_052.jpg");
+}
+
+#img53 {
+  background-image: url("images/editorial/mobile/editorial_21_053.jpg");
+}
+
+#img54 {
+  background-image: url("images/editorial/mobile/editorial_21_054.jpg");
+}
+
+#img55 {
+  background-image: url("images/editorial/mobile/editorial_21_055.jpg");
+}
+
+#img56 {
+  background-image: url("images/editorial/mobile/editorial_21_056.jpg");
+}
+
+#img57 {
+  background-image: url("images/editorial/mobile/editorial_21_057.jpg");
+}
+
+#img58 {
+  background-image: url("images/editorial/mobile/editorial_21_058.jpg");
+}
+
+#img59 {
+  background-image: url("images/editorial/mobile/editorial_21_059.jpg");
+}
+
+#img60 {
+  background-image: url("images/editorial/mobile/editorial_21_060.jpg");
+}
+
+#img61 {
+  background-image: url("images/editorial/mobile/editorial_21_061.jpg");
+}
+
+#img62 {
+  background-image: url("images/editorial/mobile/editorial_21_062.jpg");
+}
+
+#img63 {
+  background-image: url("images/editorial/mobile/editorial_21_063.jpg");
+}
+
+#img64 {
+  background-image: url("images/editorial/mobile/editorial_21_064.jpg");
+}
+
+/* #img65 {
+  background-image: url("images/editorial/mobile/editorial_21_065.jpg");
+} */
+
+#img66 {
+  background-image: url("images/editorial/mobile/editorial_21_066.jpg");
+}
+
+#img67 {
+  background-image: url("images/editorial/mobile/editorial_21_067.jpg");
+}
+
+#img68 {
+  background-image: url("images/editorial/mobile/editorial_21_068.jpg");
+}
+
+#img69 {
+  background-image: url("images/editorial/mobile/editorial_21_069.jpg");
+}
+
+/* #img70 {
+  background-image: url("images/editorial/mobile/editorial_21_070.jpg");
+} */
+
+#img71 {
+  background-image: url("images/editorial/mobile/editorial_21_071.jpg");
+}
+
+#img72 {
+  background-image: url("images/editorial/mobile/editorial_21_072.jpg");
+}
+
+#img73 {
+  background-image: url("images/editorial/mobile/editorial_21_073.jpg");
+}
+
+#img74 {
+  background-image: url("images/editorial/mobile/editorial_21_074.jpg");
+}
+
+#img75 {
+  background-image: url("images/editorial/mobile/editorial_21_075.jpg");
+}
+
+#img76 {
+  background-image: url("images/editorial/mobile/editorial_21_076.jpg");
+}
+
+/* #img77 {
+  background-image: url("images/editorial/mobile/editorial_21_077.jpg");
+} */
+
+#img78 {
+  background-image: url("images/editorial/mobile/editorial_21_078.jpg");
+}
+
+#img79 {
+  background-image: url("images/editorial/mobile/editorial_21_079.jpg");
+}
+
+#img80 {
+  background-image: url("images/editorial/mobile/editorial_21_080.jpg");
+}
+
+/* #img81 {
+  background-image: url("images/editorial/mobile/editorial_21_081.jpg");
+} */
+
+#img82 {
+  background-image: url("images/editorial/mobile/editorial_21_082.jpg");
+}
+
+#img83 {
+  background-image: url("images/editorial/mobile/editorial_21_083.jpg");
+}
+
+#img84 {
+  background-image: url("images/editorial/mobile/editorial_21_084.jpg");
+}
+
+#img85 {
+  background-image: url("images/editorial/mobile/editorial_21_085.jpg");
+}
+
+#img86 {
+  background-image: url("images/editorial/mobile/editorial_21_086.jpg");
+}
+
+#img87 {
+  background-image: url("images/editorial/mobile/editorial_21_087.jpg");
+}
+
+#img88 {
+  background-image: url("images/editorial/mobile/editorial_21_088.jpg");
+}
+
+#img89 {
+  background-image: url("images/editorial/mobile/editorial_21_089.jpg");
+}
+
+#img90 {
+  background-image: url("images/editorial/mobile/editorial_21_090.jpg");
+}
+
+#img91 {
+  background-image: url("images/editorial/mobile/editorial_21_091.jpg");
+}
+
+#img92 {
+  background-image: url("images/editorial/mobile/editorial_21_092.jpg");
+}
+
+#img93 {
+  background-image: url("images/editorial/mobile/editorial_21_093.jpg");
+}
+
+#img94 {
+  background-image: url("images/editorial/mobile/editorial_21_094.jpg");
+}
+}
+
+/* iPhone 6+ Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) { 
+.main {
+    padding-left: 0.5%;
+}
+
+.slider {
+  margin-top: 300px;
+}
+
+.nav-top {
+  font-size: 23px;
+}
+
+.nav-top ul {
+    padding-left: 48%;
+}
+
+.nav-top ul li {
+    display: initial;
+}
+
+
+span {
+  padding-left: 3%;
+}
+
+#contact {
+  font-size: 20px;
+}
+
+span a.number {
+  padding-left: 3%;
+}
+
+.logo {
+  font-size: 50px;
+}
+
+.align-bottom {
+    left: 4%;
+}
+
+.video.slider {
+  width: 900px;
+}
+
+iframe {
+
+    padding-top: 50px;
+  width: 900px;
+}
+
+.full-width {
+    padding-left: 31px;
   }
 
-    .shop {
-    width: 100%;
-    flex-direction: row;
-    position: static;
+  .full-width-xl {
+    padding-left: 20px;
   }
 
-  #homepage {
-    display: none;
+_::-webkit-:host:not(:root:root), .slider { margin-top: 40px; }
+
+  
+}
+
+/* iPhone 6+ Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) { 
+.main {
+    padding-left: 0.5%;
+}
+
+.slider {
+  width: 820px;
+}
+
+.nav-top ul {
+    padding-left: 49.8%;
+}
+
+.align-bottom {
+    left: 1%;
+}
+
+iframe {
+    width: 750px;
+    height: 422px;
+}
+
+.white-left {
+    height: 400px;
+    margin-right: 20px;
+  }
+  .white-right {
+    height: 400px;
+  }
+  .image-left {
+    height: 400px;
+    margin-right: 20px;
+  }
+  .image-right {
+    height: 400px;
+  }
+  .image-left-711 {
+    height: 400px;
+  }
+  .image-right-711 {
+    height: 400px;
+  }
+  .full-width {
+    height: 400px;
+  }
+  .full-width-xl {
+    height: 400px;
   }
 
-  div#navbar-ipad {
-  display: block;
+
+#img0_personal {
+    background-image: url("images/personal/mobile/personalorder_001.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img1_personal {
+    background-image: url("images/personal/mobile/personalorder_002.jpg");
+  height: 400px;
+}
+
+#img2_personal {
+    background-image: url("images/personal/mobile/personalorder_003.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img3_personal {
+    background-image: url("images/personal/mobile/personalorder_004.jpg");
+  height: 400px;
+}
+
+#img4_personal {
+    background-image: url("images/personal/mobile/personalorder_005.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img5_personal {
+    background-image: url("images/personal/mobile/personalorder_006.jpg");
+  height: 400px;
+}
+
+#img6_personal {
+    background-image: url("images/personal/mobile/personalorder_007.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img7_personal {
+    background-image: url("images/personal/mobile/personalorder_008.jpg");
+  height: 400px;
+}
+
+#img8_personal {
+    background-image: url("images/personal/mobile/personalorder_009.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img9_personal {
+    background-image: url("images/personal/mobile/personalorder_010.jpg");
+  height: 400px;
+}
+
+#img10_personal {
+    background-image: url("images/personal/mobile/personalorder_011.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img11_personal {
+    background-image: url("images/personal/mobile/personalorder_012.jpg");
+  height: 400px;
+}
+
+#img12_personal {
+    background-image: url("images/personal/mobile/personalorder_013.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img13_personal {
+    background-image: url("images/personal/mobile/personalorder_014.jpg");
+  height: 400px;
+}
+
+#img14_personal {
+    background-image: url("images/personal/mobile/personalorder_015.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img15_personal {
+    background-image: url("images/personal/mobile/personalorder_016.jpg");
+  height: 400px;
+}
+
+#img16_personal {
+  background-image: url("images/personal/mobile/personalorder_017.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img17_personal {
+    background-image: url("images/personal/mobile/personalorder_018.jpg");
+  height: 400px;
+}
+
+#img18_personal {
+    background-image: url("images/personal/mobile/personalorder_019.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img19_personal {
+    background-image: url("images/personal/mobile/personalorder_020.jpg");
+  height: 400px;
+}
+
+#img20_personal {
+    background-image: url("images/personal/mobile/personalorder_021.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img21_personal {
+    background-image: url("images/personal/mobile/personalorder_022.jpg");
+  height: 400px;
+}
+
+#img22_personal {
+    background-image: url("images/personal/mobile/personalorder_023.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img23_personal {
+    background-image: url("images/personal/mobile/personalorder_024.jpg");
+  height: 400px;
+}
+
+#img24_personal {
+    background-image: url("images/personal/mobile/personalorder_025.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img25_personal {
+    background-image: url("images/personal/mobile/personalorder_026.jpg");
+  height: 400px;
+}
+
+#img26_personal {
+    background-image: url("images/personal/mobile/personalorder_027.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img27_personal {
+    background-image: url("images/personal/mobile/personalorder_028.jpg");
+  height: 400px;
+}
+
+#img28_personal {
+    background-image: url("images/personal/mobile/personalorder_029.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img29_personal {
+    background-image: url("images/personal/mobile/personalorder_030.jpg");
+  height: 400px;
+}
+
+#img30_personal {
+    background-image: url("images/personal/mobile/personalorder_031.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img31_personal {
+    background-image: url("images/personal/mobile/personalorder_032.jpg");
+  height: 400px;
+}
+
+#img32_personal {
+    background-image: url("images/personal/mobile/personalorder_033.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img33_personal {
+    background-image: url("images/personal/mobile/personalorder_034.jpg");
+  height: 400px;
+}
+
+#img34_personal {
+    background-image: url("images/personal/mobile/personalorder_035.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img35_personal {
+    background-image: url("images/personal/mobile/personalorder_036.jpg");
+  height: 400px;
+}
+
+#img36_personal {
+    background-image: url("images/personal/mobile/personalorder_037.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img37_personal {
+    background-image: url("images/personal/mobile/personalorder_038.jpg");
+  height: 400px;
+}
+
+#img38_personal {
+    background-image: url("images/personal/mobile/personalorder_039.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img39_personal {
+    background-image: url("images/personal/mobile/personalorder_040.jpg");
+  height: 400px;
+}
+
+#img40_personal {
+    background-image: url("images/personal/mobile/personalorder_041.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img41_personal {
+    background-image: url("images/personal/mobile/personalorder_042.jpg");
+  height: 400px;
+}
+
+#img42_personal {
+    background-image: url("images/personal/mobile/personalorder_043.jpg");
+  height: 400px;
+  margin-right: 20px;
+}
+
+#img43_personal {
+    background-image: url("images/personal/mobile/personalorder_044.jpg");
+  height: 400px;
+}
+}
+
+
+/* ------------- VARIOUS HEIGHTS -------------- */
+@media screen and (min-height: 400px) and (max-height: 514px) and (-webkit-min-device-pixel-ratio: 1) {
+
+.slider {
+    width: 420px;
   }
 
-  ul {
-    margin-top: 5%;
-    }
-
-  ul li#logo {
-    display: none;
+  .white-left {
+    height: 267px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  .white-right {
+    height: 267px;
+    width: 200px;
+  }
+  .image-left {
+    height: 267px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  .image-right {
+    height: 267px;
+    width: 200px;
+  }
+  .image-left-711 {
+    height: 267px;
+    width: 200px;
+    margin-right: 47.5px;
+  }
+  .image-right-711 {
+    height: 267px;
+    width: 200px;
+  }
+  .full-width {
+    height: 267px;
+    width: 200px;
+  }
+  .full-width-xl {
+    height: 267px;
+    width: 200px;
   }
 
-  ul li#logo-ipad {
-    display: block;
-    font-size: 2em;
-    letter-spacing: -1.4px; 
-    margin-top: 3%;
+
+#img0_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img1_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img2_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img3_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img4_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img5_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img6_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img7_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img8_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img9_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img10_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img11_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img12_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img13_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img14_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img15_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img16_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img17_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img18_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img19_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img20_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img21_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img22_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img23_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img24_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img25_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img26_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img27_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img28_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img29_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img30_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img31_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img32_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img33_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img34_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img35_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img36_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img37_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img38_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img39_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img40_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img41_personal {
+  height: 267px;
+  width: 200px;
+}
+
+#img42_personal {
+  height: 267px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+#img43_personal {
+  height: 267px;
+  width: 200px;
+}
+
+}
+
+@media screen and (min-height: 515px) and (max-height: 644px) and (-webkit-min-device-pixel-ratio: 1) {
+
+   .slider {
+    width: 620px;
   }
 
-  .nav {
-    font-size: 140%;
+  .white-left {
+    height: 400px;
+    width: 300px;
+    margin-right: 20px;
   }
+  .white-right {
+    height: 400px;
+    width: 300px;
+  }
+  .image-left {
+    height: 400px;
+    width: 300px;
+    margin-right: 20px;
+  }
+  .image-right {
+    height: 400px;
+    width: 300px;
+  }
+  .image-left-711 {
+    height: 400px;
+    width: 266.5px;
+    margin-right: 53.5px;
+  }
+  .image-right-711 {
+    height: 400px;
+    width: 300px;
+  }
+  .full-width {
+    height: 400px;
+    width: 620px;
+  }
+  .full-width-xl {
+    height: 400px;
+    width: 620px;
+  }
+
+#img0_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img1_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img2_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img3_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img4_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img5_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img6_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img7_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img8_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img9_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img10_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img11_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img12_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img13_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img14_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img15_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img16_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img17_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img18_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+
+#img19_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img20_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img21_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img22_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img23_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img24_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img25_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img26_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img27_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img28_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img29_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img30_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img31_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img32_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img33_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img34_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img35_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img36_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img37_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img38_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img39_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img40_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img41_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img42_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img43_personal {
+  height: 400px;
+  width: 300px;
+}
+
+}
+
+@media screen and (min-height: 645px) and (max-height: 722px) and (-webkit-min-device-pixel-ratio: 1) {
 
   .slider {
-    margin-top: 10%;
+    width: 820px;
   }
 
-  .bottom-center {
-    bottom: 40px;
-    }-
-    
-
-    *::-webkit-media-controls-start-playback-button {
-  display: none!important;
-  -webkit-appearance: none;
-  opacity: 0;
+  .white-left {
+    height: 533px;
+    width: 400px;
+    margin-right: 20px;
+  }
+  .white-right {
+    height: 533px;
+    width: 400px;
+  }
+  .image-left {
+    height: 533px;
+    width: 400px;
+    margin-right: 20px;
+  }
+  .image-right {
+    height: 533px;
+    width: 400px;
+  }
+  .image-left-711 {
+    height: 533px;
+    width: 356px;
+    margin-right: 64px;
+  }
+  .image-right-711 {
+    height: 533px;
+    width: 400px;
+  }
+  .full-width {
+    height: 533px;
+    width: 820px;
+  }
+  .full-width-xl {
+    height: 533px;
+    width: 820px;
   } 
-  
-  section#stockists {
-    margin-top: 10%;
-     padding-top: 0%;
-  }
 
-  .bottom-align {
-    left: 0%;
-  } 
-
+#img0_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
 }
 
-/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
-
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-   .story {
-    top: 105%;
-  }
+#img1_personal {
+  height: 533px;
+  width: 400px;
 }
 
-/* ----------- iPad Pro 12.9" ----------- */
-
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-  .story {
-    top: 105%;
-  }
+#img2_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
 }
 
-/*safari hacks*/
-  
-@media \\0 screen and (min-width: 320px) and (max-width: 568px){
-  .story {
-    top:105%;
+#img3_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img4_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img5_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img6_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img7_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img8_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img9_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img10_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img11_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img12_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img13_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img14_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img15_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img16_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img17_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img18_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img19_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img20_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img21_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img22_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img23_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img24_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img25_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img26_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img27_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img28_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img29_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img30_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img31_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img32_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img33_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img34_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img35_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img36_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img37_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img38_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img39_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img40_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img41_personal {
+  height: 533px;
+  width: 400px;
+}
+
+#img42_personal {
+  height: 533px;
+  width: 400px;
+  margin-right: 20px;
+}
+
+#img43_personal {
+  height: 533px;
+  width: 400px;
+}
+
+@media screen and (min-height: 515px) and (max-height: 722px) and (max-width: 700px) and (-webkit-min-device-pixel-ratio: 1) {
+
+  .slider {
+      width: 420px;
     }
+  
+    .white-left {
+      height: 267px;
+      width: 200px;
+      margin-right: 20px;
+    }
+    .white-right {
+      height: 267px;
+      width: 200px;
+    }
+    .image-left {
+      height: 267px;
+      width: 200px;
+      margin-right: 20px;
+    }
+    .image-right {
+      height: 267px;
+      width: 200px;
+    }
+    .image-left-711 {
+      height: 267px;
+      width: 200px;
+      margin-right: 47.5px;
+    }
+    .image-right-711 {
+      height: 267px;
+      width: 200px;
+    }
+    .full-width {
+      height: 267px;
+      width: 200px;
+    }
+    .full-width-xl {
+      height: 267px;
+      width: 200px;
+    }
+  
+  
+  #img0_personal {
+    height: 267px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  #img1_personal {
+    height: 267px;
+    width: 200px;
+  }
+  
+  #img2_personal {
+    height: 267px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  #img3_personal {
+    height: 267px;
+    width: 200px;
+  }
+  
+  #img4_personal {
+    height: 267px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  #img5_personal {
+    height: 267px;
+    width: 200px;
+  }
+  
+  #img6_personal {
+    height: 267px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  #img7_personal {
+    height: 267px;
+    width: 200px;
+  }
+  
+  #img8_personal {
+    height: 267px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  #img9_personal {
+    height: 267px;
+    width: 200px;
+  }
+  
+  #img10_personal {
+    height: 267px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  #img11_personal {
+    height: 267px;
+    width: 200px;
+  }
+  
+  #img12_personal {
+    height: 267px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  #img13_personal {
+    height: 267px;
+    width: 200px;
+  }
+  
+  #img14_personal {
+    height: 267px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  #img15_personal {
+    height: 267px;
+    width: 200px;
+  }
+  
+  #img16_personal {
+    height: 267px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  #img17_personal {
+    height: 267px;
+    width: 200px;
+  }
+  
+  #img18_personal {
+    height: 267px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  #img19_personal {
+    height: 267px;
+    width: 200px;
+  }
+  
+  #img20_personal {
+    height: 267px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  #img21_personal {
+    height: 267px;
+    width: 200px;
+  }
+  
+  #img22_personal {
+    height: 267px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  #img23_personal {
+    height: 267px;
+    width: 200px;
+  }
+  
+  #img24_personal {
+    height: 267px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  #img25_personal {
+    height: 267px;
+    width: 200px;
+  }
+  
+  #img26_personal {
+    height: 267px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  #img27_personal {
+    height: 267px;
+    width: 200px;
+  }
+  
+  #img28_personal {
+    height: 267px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  #img29_personal {
+    height: 267px;
+    width: 200px;
+  }
+  
+  #img30_personal {
+    height: 267px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  #img31_personal {
+    height: 267px;
+    width: 200px;
+  }
+  
+  #img32_personal {
+    height: 267px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  #img33_personal {
+    height: 267px;
+    width: 200px;
+  }
+  
+  #img34_personal {
+    height: 267px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  #img35_personal {
+    height: 267px;
+    width: 200px;
+  }
+  
+  #img36_personal {
+    height: 267px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  #img37_personal {
+    height: 267px;
+    width: 200px;
+  }
+  
+  #img38_personal {
+    height: 267px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  #img39_personal {
+    height: 267px;
+    width: 200px;
+  }
+  
+  #img40_personal {
+    height: 267px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  #img41_personal {
+    height: 267px;
+    width: 200px;
+  }
+  
+  #img42_personal {
+    height: 267px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  #img43_personal {
+    height: 267px;
+    width: 200px;
+  }
+  
+}
+
+
+@media screen and (min-height: 645px) and (max-height: 722px) and (min-width: 701px) and (max-width: 935px) and (-webkit-min-device-pixel-ratio: 1) {
+  .slider {
+    width: 620px;
   }
 
+  .white-left {
+    height: 400px;
+    width: 300px;
+    margin-right: 20px;
+  }
+  .white-right {
+    height: 400px;
+    width: 300px;
+  }
+  .image-left {
+    height: 400px;
+    width: 300px;
+    margin-right: 20px;
+  }
+  .image-right {
+    height: 400px;
+    width: 300px;
+  }
+  .image-left-711 {
+    height: 400px;
+    width: 266.5px;
+    margin-right: 53.5px;
+  }
+  .image-right-711 {
+    height: 400px;
+    width: 300px;
+  }
+  .full-width {
+    height: 400px;
+    width: 620px;
+  }
+  .full-width-xl {
+    height: 400px;
+    width: 620px;
+  }
+
+#img0_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img1_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img2_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img3_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img4_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img5_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img6_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img7_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img8_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img9_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img10_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img11_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img12_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img13_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img14_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img15_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img16_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img17_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img18_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+
+#img19_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img20_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img21_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img22_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img23_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img24_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img25_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img26_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img27_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img28_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img29_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img30_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img31_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img32_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img33_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img34_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img35_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img36_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img37_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img38_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img39_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img40_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img41_personal {
+  height: 400px;
+  width: 300px;
+}
+
+#img42_personal {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+#img43_personal {
+  height: 400px;
+  width: 300px;
+}
+
+
+
+}
 
 
 
